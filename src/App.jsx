@@ -3,6 +3,7 @@ import {
   WEEKS, PACES, ROUTINES, DAY_NAMES, RACE_DATE,
   dayDate, fmtDate, weekRange,
 } from './data.js'
+import Nutrition from './Nutrition.jsx'
 
 const TYPE_CLASS = { rest: 'rest', easy: 'easy', quality: 'quality', long: 'long', race: 'race' }
 const TYPE_LABEL = { rest: 'Rest', easy: 'Easy', quality: 'Quality', long: 'Long run', race: 'RACE' }
@@ -135,6 +136,7 @@ function InfoModal({ title, children, onClose }) {
 export default function App() {
   const [sel, setSel] = useState(null)
   const [info, setInfo] = useState(null) // 'paces' | 'strength'
+  const [tab, setTab] = useState('plan') // 'plan' | 'nutrition'
   const [done, toggle] = useDone()
   const today = new Date()
 
@@ -167,6 +169,14 @@ export default function App() {
         </div>
       </header>
 
+      <nav className="tabs">
+        <button className={tab === 'plan' ? 'active' : ''} onClick={() => setTab('plan')}>📅 Training Plan</button>
+        <button className={tab === 'nutrition' ? 'active' : ''} onClick={() => setTab('nutrition')}>🍝 Nutrition</button>
+      </nav>
+
+      {tab === 'nutrition' && <Nutrition />}
+
+      {tab === 'plan' && <>
       <nav className="toolbar">
         <button onClick={() => setInfo('paces')}>Training paces</button>
         <button onClick={() => setInfo('strength')}>Strength guide</button>
@@ -221,6 +231,7 @@ export default function App() {
           </section>
         ))}
       </main>
+      </>}
 
       {sel && <DayModal sel={sel} done={done} toggle={toggle} onClose={() => setSel(null)} />}
 

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-// SHA-256 hash of the password. Current password: "RunEric"
+// SHA-256 hash of the password.
 // To change it, run this in your browser console and paste the result here:
 //   crypto.subtle.digest('SHA-256', new TextEncoder().encode('yourNewPassword'))
 //     .then(b => console.log([...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('')))

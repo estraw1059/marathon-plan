@@ -176,3 +176,24 @@ header h1 { margin: 0; font-size: 1.5rem; }
 footer {
   margin-top: 36px; text-align: center; color: var(--gray); font-size: .8rem;
 }
+
+.gate {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: var(--navy);
+}
+.gate-card {
+  background: #fff; border-radius: 12px; padding: 36px 40px; text-align: center;
+  display: flex; flex-direction: column; gap: 12px; width: 300px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+}
+.gate-card h1 { margin: 0; color: var(--navy); font-size: 1.4rem; }
+.gate-card p { margin: 0; color: var(--gray); font-size: .9rem; }
+.gate-card input {
+  padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px;
+  font-size: 1rem; text-align: center;
+}
+.gate-card button {
+  background: var(--blue); color: #fff; border: 0; border-radius: 8px;
+  padding: 11px; font-size: .95rem; font-weight: 700; cursor: pointer;
+}
+.gate-error { color: #a32020 !important; font-weight: 600; }

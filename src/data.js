@@ -172,23 +172,23 @@ export const WEEKS = [
     lng(14),
     rec(4),
   ]},
-  { n: 7, total: 46, days: [
+  { n: 7, total: 49, days: [
     rest(),
     iv(8, '4 × 1200m'),
     core(easy(6)),
     mp(8, 5),
     sb(easy(4)),
-    lng(15),
+    lng(18, 'Steady — fuel it', { detail: 'Bumped from 15 to 18. Your Aug 29 sixteen-miler averaged 143 bpm with miles 8–13 getting FASTER — you had capacity to spare. Run it at true long-run effort, fuel every 30–35 min from mile 5, and let the pace be whatever the heat allows.' }),
     rec(5),
   ]},
-  { n: 8, total: 38, label: 'CUTBACK', days: [
+  { n: 8, total: 45, label: 'TRIMMED BUILD', days: [
     rest(),
-    strides(7, 6),
+    iv(6, '5 × 800m', { detail: 'Warm up 2 mi easy + 4 strides. 5 × 800m at interval pace (6:30–6:40) with equal-time jog. Cool down to 6 total — trimmed from the usual 8 to protect Thursday and Saturday.' }),
     core(easy(5)),
-    tempo(6, 3),
+    tempo(8, 5, { detail: 'THE ONE THAT MATTERS. Warm up 2 mi. 5 CONTINUOUS miles at tempo — do not cut this short, it is the session you have trimmed every week of this block. In this heat the watch will read 7:10–7:20; that is correct. Run the EFFORT: comfortably hard, could speak a sentence not a paragraph. Cool down 1 mi.' }),
     sb(easy(4)),
-    lng(12),
-    rec(4, { detail: '4 miles very easy, then pack for Scotland! Running shoes go in the carry-on.' }),
+    lng(18, 'Second 18 — no fade', { detail: 'Back-to-back 18s. Daily mileage is trimmed all week to make room for this. Same fueling rehearsal. Goal is to finish the last 3 miles no slower than the middle 3 — the Aug 29 run faded 40 sec/mi over the last two, this one should not. Then pack for Scotland.' }),
+    rec(4),
   ]},
   { n: 9, total: '~34', label: 'SCOTLAND', scot: true, days: [
     rest({ strength: 'BW', run: 'REST / travel', detail: 'Travel day. Shake out the flight with the bodyweight circuit and 15 min yoga when you land.' }),
@@ -208,22 +208,22 @@ export const WEEKS = [
     lng('2 hr', 'By feel, ~13 mi', { run: 'LONG 2 hr', miles: 13, detail: '2 hours easy by feel (~13 miles). The key session of the trip — protect it.' }),
     { run: '45′ recovery', type: 'easy', yoga: Y[20], detail: '45 min very easy, then fly home. Back to full training Monday.' },
   ]},
-  { n: 11, total: 46, days: [
+  { n: 11, total: 48, days: [
     rest(),
     iv(8, '6 × 800m'),
     core(easy(6)),
     mp(8, 5),
     sb(easy(4)),
-    lng(16, 'Last 3 @ MP', { detail: '16 miles: first 13 at long-run pace, finish with 3 at marathon pace (7:25). Practice race fueling throughout.' }),
+    lng(18, 'Last 4 @ MP', { detail: '18 miles: first 14 at long-run pace, finish with 4 at marathon pace (7:25). First long run back in cool-ish air after Scotland — this is your real fitness read. Practice race fueling throughout.' }),
     rec(4),
   ]},
-  { n: 12, total: 50, days: [
+  { n: 12, total: 52, days: [
     rest(),
     iv(8, '5 × 1000m'),
     core(easy(6)),
     mp(8, 6),
     sb(easy(5)),
-    lng(18, 'Last 4 @ MP', { detail: '18 miles: first 14 at long-run pace, last 4 at marathon pace. Full race-day fueling rehearsal.' }),
+    lng(20, 'Last 4 @ MP', { detail: 'Twenty #1. First 16 at long-run pace, last 4 at marathon pace. Full race-day fueling rehearsal — race breakfast, race gels, race kit.' }),
     rec(5),
   ]},
   { n: 13, total: 52, label: 'PEAK WEEK', days: [
@@ -232,7 +232,7 @@ export const WEEKS = [
     core(easy(6)),
     tempo(8, 6, { run: '8 mi w/ 6 mi tempo/MP', detail: 'Warm up 2 mi. 6 miles alternating tempo (6:55–7:05) and MP (7:25) by the mile. Cool down briefly. Biggest midweek session of the block.' }),
     sb(easy(5)),
-    lng(20, 'Steady — fuel it', { detail: 'The 20-miler. Steady long-run pace, full fueling plan, race-day breakfast beforehand. This is the single most important run of the cycle. Nothing heroic — just get it done.' }),
+    lng(20, 'Steady — fuel it', { detail: 'Twenty #2 and the peak of the cycle. Steady long-run pace, full fueling plan, race-day breakfast beforehand. By now you will have run four 18+ efforts — this one is confirmation, not discovery. Nothing heroic, just get it done.' }),
     rec(4),
   ]},
   { n: 14, total: 44, days: [

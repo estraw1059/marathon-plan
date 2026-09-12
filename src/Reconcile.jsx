@@ -1,6 +1,6 @@
 import {
   SNAPSHOT, SCOREBOARD, SCOREBOARD_NOTE, COMPLETION, PACE_CHECK,
-  HEAT, ACTIONS, BOTTOM_LINE, PLAN_CHANGES,
+  HEAT, ACTIONS, BOTTOM_LINE, PLAN_CHANGES, SINCE_LAST, FATIGUE,
 } from './reconcile.js'
 
 export default function Reconcile() {
@@ -31,6 +31,31 @@ export default function Reconcile() {
           ))}
         </div>
         <p className="recon-note">{SCOREBOARD_NOTE}</p>
+      </section>
+
+      <section>
+        <h2 className="nut-h2">{SINCE_LAST.title}</h2>
+        <div className="since-grid">
+          <div className="since-col wins">
+            <h3>✓ Wins</h3>
+            {SINCE_LAST.wins.map(([t, b]) => (
+              <div className="since-item" key={t}><strong>{t}</strong><p>{b}</p></div>
+            ))}
+          </div>
+          <div className="since-col misses">
+            <h3>✗ Misses</h3>
+            {SINCE_LAST.misses.map(([t, b]) => (
+              <div className="since-item" key={t}><strong>{t}</strong><p>{b}</p></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="nut-h2">{FATIGUE.title}</h2>
+        <div className="fatigue-card">
+          {FATIGUE.body.map((p, i) => <p key={i}>{p}</p>)}
+        </div>
       </section>
 
       <div className="recon-two">
@@ -89,10 +114,10 @@ export default function Reconcile() {
       </section>
 
       <section>
-        <h2 className="nut-h2">What to change for weeks 8–16</h2>
+        <h2 className="nut-h2">What to change for weeks 9–16</h2>
         <ol className="actions">
           {ACTIONS.map(a => (
-            <li key={a.n}>
+            <li key={a.n} className={a.done ? 'act-done' : ''}>
               <strong>{a.title}</strong>
               <p>{a.body}</p>
             </li>

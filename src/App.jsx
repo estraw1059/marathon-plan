@@ -257,9 +257,10 @@ export default function App() {
           <p className="routine-note">
             Equipment: adjustable dumbbells (10–50 lb), mat, sturdy bench/chair/step, timer.
             Strength always after runs or on rest days — never before quality workouts.
+            Friday’s Strength B was retired on Sep 12 after nine weeks at zero completions; its split squat
+            and side plank now live in Monday’s session. Mondays are 9 for 9 — that is the habit that works.
           </p>
           <Routine routine={ROUTINES.A} />
-          <Routine routine={ROUTINES.B} />
           <Routine routine={ROUTINES.CORE} />
           <Routine routine={ROUTINES.BW} />
         </InfoModal>

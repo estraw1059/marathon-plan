@@ -15,27 +15,17 @@ export const PACES = [
 
 export const ROUTINES = {
   A: {
-    title: 'Strength A — 30 min (dumbbells)',
-    note: 'Rest 60–90 sec between sets. Last 2 reps hard but clean; add 5 lb when all sets feel easy.',
+    title: 'Strength A — Monday, 35 min (dumbbells)',
+    note: 'The only lifting session in the plan — Friday’s Strength B was retired on Sep 12 after going 0 for 9. Rest 60–90 sec between sets. Last 2 reps hard but clean; add 5 lb when all sets feel easy.',
     exercises: [
       { name: 'Goblet Squat', dose: '3 × 10', how: 'Hold one DB vertically against your chest, elbows tucked. Feet shoulder-width, toes slightly out. Sit hips down and back until thighs are parallel, chest tall, then drive up through the whole foot.', cue: 'Knees track over toes — don’t let them cave inward.' },
       { name: 'DB Romanian Deadlift', dose: '3 × 10', how: 'DBs in front of thighs, slight knee bend. Push hips straight back, sliding DBs to mid-shin with a flat back. Squeeze glutes to stand.', cue: 'It’s a hip hinge, not a squat — feel the hamstrings load.' },
-      { name: 'Reverse Lunge', dose: '3 × 8 / leg', how: 'DBs at sides. Step one foot back, lower until both knees hit ~90°, front shin vertical. Push through the front heel to return. All reps one leg, then switch.', cue: 'Torso upright; the front leg does the work.' },
+      { name: 'Reverse Lunge  —or—  Split Squat', dose: '3 × 8 / leg', how: 'LUNGE: DBs at sides, step one foot back, lower until both knees hit ~90°, front shin vertical, push through the front heel. SPLIT SQUAT: set a staggered stance (feet hip-width apart, not tightrope) and drop the back knee straight down without stepping. Alternate the two week to week.', cue: 'Torso upright; the front leg does the work. Split squat is the easier one to load heavy — use it when you want more weight.' },
       { name: 'Single-Leg Calf Raise', dose: '3 × 12 / leg', how: 'One foot on a step edge, heel hanging off, fingertips on wall for balance. Lower heel below the step, pause, rise as high as you can. 3 sec down.', cue: 'Runners’ gold: strong calves injury-proof the Achilles.' },
       { name: 'One-Arm DB Row', dose: '3 × 10 / arm', how: 'Hand and knee on bench, back flat like a table. Pull the DB to your hip, elbow skimming your ribs. Lower with control.', cue: 'Pull with the back, not the bicep — no torso twisting.' },
       { name: 'Overhead Press', dose: '3 × 8', how: 'Standing, DBs at shoulders. Brace your core and press straight overhead to lockout by your ears. Lower with control.', cue: 'Ribs down, no back-arching — squeeze glutes for a stable base.' },
       { name: 'Plank (finisher)', dose: '3 × 45 sec', how: 'Forearms down, elbows under shoulders, body one straight line head to heels. Squeeze glutes and brace abs.', cue: 'Don’t let hips sag or pike. Shaking is fine; sagging isn’t.' },
-    ],
-  },
-  B: {
-    title: 'Strength B — 20 min (lighter)',
-    note: 'Keep legs fresh for Saturday’s long run — smooth reps, no grinding.',
-    exercises: [
-      { name: 'Split Squat', dose: '2 × 10 / leg', how: 'Staggered stance, feet hip-width apart (not tightrope). Drop the back knee straight down, then drive up. All reps, then switch legs.', cue: 'Lighter than Monday’s lunges.' },
-      { name: 'DB Hip Hinge', dose: '2 × 10', how: 'Same movement as the RDL but lighter and a touch faster up. Hips back, flat back, snap hips forward to stand.', cue: 'Speed up, control down.' },
-      { name: 'Push-Up', dose: '2 × 12', how: 'Hands just wider than shoulders, body rigid. Chest to an inch off the floor, elbows ~45° from ribs. Elevate feet if easy, hands on bench if hard.', cue: 'No sagging hips.' },
-      { name: 'Side Plank', dose: '2 × 30 sec / side', how: 'On one forearm, elbow under shoulder, feet stacked, body in one line. Push hips up and hold.', cue: 'Glute med — fights late-race form collapse.' },
-      { name: 'Calf Raise (both legs)', dose: '2 × 15', how: 'Both feet on step edge, rise, pause 1 sec, lower slowly below level. Hold DBs to add load.', cue: 'Friday = both legs; Monday = single-leg.' },
+      { name: 'Side Plank (finisher)', dose: '2 × 30 sec / side', how: 'On one forearm, elbow under shoulder, feet stacked, body in one line. Push hips up and hold. Folded in from the retired Friday session.', cue: 'Glute med — the muscle that fights late-race form collapse. Worth the extra two minutes.' },
     ],
   },
   CORE: {
@@ -114,8 +104,9 @@ const rec = (mi, opts = {}) => ({
 
 // core-day wrapper
 const core = (d) => ({ ...d, core: true })
-// strength-B wrapper
-const sb = (d, light) => ({ ...d, strength: light ? 'B-light' : 'B' })
+// NOTE: Friday's Strength B was retired 2026-09-12 (0 completed in 9 weeks).
+// Its two useful movements — split squat and side plank — folded into Monday's Strength A.
+// Fridays are now easy run + yoga only.
 
 export const WEEKS = [
   { n: 1, total: 36, days: [
@@ -123,7 +114,7 @@ export const WEEKS = [
     strides(6, 6),
     core(easy(5)),
     tempo(6, 3),
-    sb(easy(4)),
+    easy(4),
     lng(10),
     rec(5),
   ]},
@@ -132,7 +123,7 @@ export const WEEKS = [
     iv(7, '8 × 400m'),
     core(easy(5)),
     tempo(6, 3),
-    sb(easy(4)),
+    easy(4),
     lng(11),
     rec(5),
   ]},
@@ -141,7 +132,7 @@ export const WEEKS = [
     iv(7, '6 × 800m'),
     core(easy(6)),
     tempo(7, 4),
-    sb(easy(4)),
+    easy(4),
     lng(12),
     rec(4),
   ]},
@@ -159,7 +150,7 @@ export const WEEKS = [
     iv(8, '5 × 1000m'),
     core(easy(6)),
     tempo(7, 4),
-    sb(easy(4)),
+    easy(4),
     lng(13),
     rec(4),
   ]},
@@ -168,7 +159,7 @@ export const WEEKS = [
     iv(8, '6 × 800m'),
     core(easy(6)),
     tempo(8, 5),
-    sb(easy(4)),
+    easy(4),
     lng(14),
     rec(4),
   ]},
@@ -177,7 +168,7 @@ export const WEEKS = [
     iv(8, '4 × 1200m'),
     core(easy(6)),
     mp(8, 5),
-    sb(easy(4)),
+    easy(4),
     lng(18, 'Steady — fuel it', { detail: 'Bumped from 15 to 18. Your Aug 29 sixteen-miler averaged 143 bpm with miles 8–13 getting FASTER — you had capacity to spare. Run it at true long-run effort, fuel every 30–35 min from mile 5, and let the pace be whatever the heat allows.' }),
     rec(5),
   ]},
@@ -186,7 +177,7 @@ export const WEEKS = [
     iv(6, '5 × 800m', { detail: 'Warm up 2 mi easy + 4 strides. 5 × 800m at interval pace (6:30–6:40) with equal-time jog. Cool down to 6 total — trimmed from the usual 8 to protect Thursday and Saturday.' }),
     core(easy(5)),
     tempo(8, 5, { detail: 'THE ONE THAT MATTERS. Warm up 2 mi. 5 CONTINUOUS miles at tempo — do not cut this short, it is the session you have trimmed every week of this block. In this heat the watch will read 7:10–7:20; that is correct. Run the EFFORT: comfortably hard, could speak a sentence not a paragraph. Cool down 1 mi.' }),
-    sb(easy(4)),
+    easy(4),
     lng(18, 'Second 18 — no fade', { detail: 'Back-to-back 18s. Daily mileage is trimmed all week to make room for this. Same fueling rehearsal. Goal is to finish the last 3 miles no slower than the middle 3 — the Aug 29 run faded 40 sec/mi over the last two, this one should not. Then pack for Scotland.' }),
     rec(4),
   ]},
@@ -213,7 +204,7 @@ export const WEEKS = [
     iv(8, '6 × 800m'),
     core(easy(6)),
     mp(8, 5),
-    sb(easy(4)),
+    easy(4),
     lng(18, 'Last 4 @ MP', { detail: '18 miles: first 14 at long-run pace, finish with 4 at marathon pace (7:25). First long run back in cool-ish air after Scotland — this is your real fitness read. Practice race fueling throughout.' }),
     rec(4),
   ]},
@@ -222,7 +213,7 @@ export const WEEKS = [
     iv(8, '5 × 1000m'),
     core(easy(6)),
     mp(8, 6),
-    sb(easy(5)),
+    easy(5),
     lng(20, 'Last 4 @ MP', { detail: 'Twenty #1. First 16 at long-run pace, last 4 at marathon pace. Full race-day fueling rehearsal — race breakfast, race gels, race kit.' }),
     rec(5),
   ]},
@@ -231,7 +222,7 @@ export const WEEKS = [
     iv(9, '4 × 1200m'),
     core(easy(6)),
     tempo(8, 6, { run: '8 mi w/ 6 mi tempo/MP', detail: 'Warm up 2 mi. 6 miles alternating tempo (6:55–7:05) and MP (7:25) by the mile. Cool down briefly. Biggest midweek session of the block.' }),
-    sb(easy(5)),
+    easy(5),
     lng(20, 'Steady — fuel it', { detail: 'Twenty #2 and the peak of the cycle. Steady long-run pace, full fueling plan, race-day breakfast beforehand. By now you will have run four 18+ efforts — this one is confirmation, not discovery. Nothing heroic, just get it done.' }),
     rec(4),
   ]},
@@ -240,7 +231,7 @@ export const WEEKS = [
     iv(7, '5 × 800m'),
     core(easy(6)),
     mp(7, 4),
-    sb(easy(4), true),
+    easy(4),
     lng(16, 'Dress rehearsal: 8 @ MP', { detail: '16 miles with the middle 8 at marathon pace. Wear race kit and shoes, use race fueling, race breakfast. Treat it like Nov 7.' }),
     rec(4),
   ]},

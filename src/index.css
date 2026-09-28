@@ -363,3 +363,9 @@ footer {
 .fatigue-card p:last-child { margin-bottom: 0; }
 .actions li.act-done strong { color: #2e7d32; }
 .actions li.act-done::marker { color: #2e7d32; }
+
+.day-pm {
+  font-size: .68rem; font-weight: 700; color: #5b4a7a;
+  background: rgba(185,174,209,.35); border-radius: 4px; padding: 1px 5px;
+  align-self: flex-start;
+}

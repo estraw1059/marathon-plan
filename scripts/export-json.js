@@ -17,6 +17,7 @@ const weeks = WEEKS.map((w, wIdx) => {
       type: d.type,
     }
     if (d.sub) out.note = d.sub
+    if (d.pm) out.pmRun = { workout: d.pm.run, miles: d.pm.miles, detail: d.pm.detail }
     if (typeof d.miles === 'number') out.miles = d.miles
     out.detail = d.detail
     out.strength = d.strength ?? null

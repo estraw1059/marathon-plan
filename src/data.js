@@ -5,8 +5,8 @@ export const PLAN_START = new Date(2026, 6, 20) // Mon Jul 20 2026
 export const RACE_DATE = new Date(2026, 10, 7) // Sat Nov 7 2026
 
 export const PACES = [
-  { name: 'Easy / Recovery', pace: '8:30–9:15 /mi', note: 'Conversational. Discipline here builds the engine.' },
-  { name: 'Long run', pace: '8:15–9:00 /mi', note: 'Relaxed; MP segments only where listed.' },
+  { name: 'Easy / Recovery', pace: '9:00–9:45 /mi', note: 'Widened Sep 28 to match what you actually run. Conversational — if in doubt, slower. Discipline here builds the engine.' },
+  { name: 'Long run', pace: '8:45–9:20 /mi', note: 'Widened Sep 28 from 8:15–9:00. Governed by EFFORT, not the watch — your Sep 26 Edinburgh 18.8 ran 9:27 at HR 138, which was correctly easy. MP segments only where listed.' },
   { name: 'Marathon pace (MP)', pace: '7:25 /mi', note: 'Goal: 3:14:xx. Halfway split 1:37:0x–1:37:30.' },
   { name: 'Tempo', pace: '6:55–7:05 /mi', note: 'Comfortably hard — could speak a sentence, not a paragraph.' },
   { name: 'Intervals (IV)', pace: '6:30–6:40 /mi', note: 'Equal-time jog recovery between reps.' },
@@ -101,6 +101,13 @@ const rec = (mi, opts = {}) => ({
   detail: `${mi} miles at the slow end of easy (9:00+/mi is fine). Legs will be heavy from the long run — that’s the point. Finish with 20 min restorative yoga.`,
   ...opts,
 })
+
+// Tuesday evening shakeout double — added Sep 28 for weeks 11-13.
+const PM3 = {
+  run: '3 mi easy shakeout',
+  miles: 3,
+  detail: 'Evening double, at least 6 hours after the morning reps — 8+ is better. TRULY easy: 9:30–10:00/mi, conversational start to finish. The job is blood flow and flushing the legs after the intervals, NOT fitness. If you cannot talk, you are running it too fast and it has become a third quality day. This is the first thing to cut if anything twinges.',
+}
 
 // core-day wrapper
 const core = (d) => ({ ...d, core: true })
@@ -199,27 +206,27 @@ export const WEEKS = [
     lng('2 hr', 'By feel, ~13 mi', { run: 'LONG 2 hr', miles: 13, detail: '2 hours easy by feel (~13 miles). The key session of the trip — protect it.' }),
     { run: '45′ recovery', type: 'easy', yoga: Y[20], detail: '45 min very easy, then fly home. Back to full training Monday.' },
   ]},
-  { n: 11, total: 48, days: [
+  { n: 11, total: 51, days: [
     rest(),
-    iv(8, '6 × 800m'),
+    iv(8, '6 × 800m', { pm: PM3 }),
     core(easy(6)),
     mp(8, 5),
     easy(4),
     lng(18, 'Last 4 @ MP', { detail: '18 miles: first 14 at long-run pace, finish with 4 at marathon pace (7:25). First long run back in cool-ish air after Scotland — this is your real fitness read. Practice race fueling throughout.' }),
     rec(4),
   ]},
-  { n: 12, total: 52, days: [
+  { n: 12, total: 55, days: [
     rest(),
-    iv(8, '5 × 1000m'),
+    iv(8, '5 × 1000m', { pm: PM3 }),
     core(easy(6)),
     mp(8, 6),
     easy(5),
     lng(20, 'Last 4 @ MP', { detail: 'Twenty #1. First 16 at long-run pace, last 4 at marathon pace. Full race-day fueling rehearsal — race breakfast, race gels, race kit.' }),
     rec(5),
   ]},
-  { n: 13, total: 52, label: 'PEAK WEEK', days: [
+  { n: 13, total: 55, label: 'PEAK WEEK', days: [
     rest(),
-    iv(9, '4 × 1200m'),
+    iv(9, '4 × 1200m', { pm: PM3 }),
     core(easy(6)),
     tempo(8, 6, { run: '8 mi w/ 6 mi tempo/MP', detail: 'Warm up 2 mi. 6 miles alternating tempo (6:55–7:05) and MP (7:25) by the mile. Cool down briefly. Biggest midweek session of the block.' }),
     easy(5),

@@ -95,6 +95,13 @@ function DayModal({ sel, done, toggle, onClose }) {
           </section>
         )}
 
+        {day.pm && (
+          <section>
+            <h3>Evening double — {day.pm.run}</h3>
+            <p>{day.pm.detail}</p>
+          </section>
+        )}
+
         {day.core && (
           <section>
             <h3>Core</h3>
@@ -221,6 +228,7 @@ export default function App() {
                     <span className="day-date">{DAY_NAMES[dIdx]} {fmtDate(date)}</span>
                     <span className="day-run">{day.run}</span>
                     {day.sub && <span className="day-sub">{day.sub}</span>}
+                    {day.pm && <span className="day-pm">+ PM {day.pm.miles} mi shakeout</span>}
                     <span className="day-extras">
                       {day.strength && <em>💪 {day.strength.replace('-light', ' (light)')}</em>}
                       {day.core && <em>🧱 Core</em>}

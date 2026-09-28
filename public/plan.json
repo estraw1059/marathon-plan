@@ -6,18 +6,18 @@
   "planStart": "2026-07-20",
   "raceDate": "2026-11-07",
   "totalWeeks": 16,
-  "generatedAt": "2026-09-04T21:17:12.668Z",
+  "generatedAt": "2026-09-28T20:40:57.178Z",
   "revision": "2026-09-04 — long-run progression reworked (18/18 pre-Scotland, 18/20/20 in wks 11-13)",
   "paces": [
     {
       "name": "Easy / Recovery",
-      "pace": "8:30–9:15 /mi",
-      "note": "Conversational. Discipline here builds the engine."
+      "pace": "9:00–9:45 /mi",
+      "note": "Widened Sep 28 to match what you actually run. Conversational — if in doubt, slower. Discipline here builds the engine."
     },
     {
       "name": "Long run",
-      "pace": "8:15–9:00 /mi",
-      "note": "Relaxed; MP segments only where listed."
+      "pace": "8:45–9:20 /mi",
+      "note": "Widened Sep 28 from 8:15–9:00. Governed by EFFORT, not the watch — your Sep 26 Edinburgh 18.8 ran 9:27 at HR 138, which was correctly easy. MP segments only where listed."
     },
     {
       "name": "Marathon pace (MP)",
@@ -42,8 +42,8 @@
   ],
   "strengthRoutines": {
     "A": {
-      "title": "Strength A — 30 min (dumbbells)",
-      "note": "Rest 60–90 sec between sets. Last 2 reps hard but clean; add 5 lb when all sets feel easy.",
+      "title": "Strength A — Monday, 35 min (dumbbells)",
+      "note": "The only lifting session in the plan — Friday’s Strength B was retired on Sep 12 after going 0 for 9. Rest 60–90 sec between sets. Last 2 reps hard but clean; add 5 lb when all sets feel easy.",
       "exercises": [
         {
           "name": "Goblet Squat",
@@ -58,10 +58,10 @@
           "cue": "It’s a hip hinge, not a squat — feel the hamstrings load."
         },
         {
-          "name": "Reverse Lunge",
+          "name": "Reverse Lunge  —or—  Split Squat",
           "dose": "3 × 8 / leg",
-          "how": "DBs at sides. Step one foot back, lower until both knees hit ~90°, front shin vertical. Push through the front heel to return. All reps one leg, then switch.",
-          "cue": "Torso upright; the front leg does the work."
+          "how": "LUNGE: DBs at sides, step one foot back, lower until both knees hit ~90°, front shin vertical, push through the front heel. SPLIT SQUAT: set a staggered stance (feet hip-width apart, not tightrope) and drop the back knee straight down without stepping. Alternate the two week to week.",
+          "cue": "Torso upright; the front leg does the work. Split squat is the easier one to load heavy — use it when you want more weight."
         },
         {
           "name": "Single-Leg Calf Raise",
@@ -86,42 +86,12 @@
           "dose": "3 × 45 sec",
           "how": "Forearms down, elbows under shoulders, body one straight line head to heels. Squeeze glutes and brace abs.",
           "cue": "Don’t let hips sag or pike. Shaking is fine; sagging isn’t."
-        }
-      ]
-    },
-    "B": {
-      "title": "Strength B — 20 min (lighter)",
-      "note": "Keep legs fresh for Saturday’s long run — smooth reps, no grinding.",
-      "exercises": [
-        {
-          "name": "Split Squat",
-          "dose": "2 × 10 / leg",
-          "how": "Staggered stance, feet hip-width apart (not tightrope). Drop the back knee straight down, then drive up. All reps, then switch legs.",
-          "cue": "Lighter than Monday’s lunges."
         },
         {
-          "name": "DB Hip Hinge",
-          "dose": "2 × 10",
-          "how": "Same movement as the RDL but lighter and a touch faster up. Hips back, flat back, snap hips forward to stand.",
-          "cue": "Speed up, control down."
-        },
-        {
-          "name": "Push-Up",
-          "dose": "2 × 12",
-          "how": "Hands just wider than shoulders, body rigid. Chest to an inch off the floor, elbows ~45° from ribs. Elevate feet if easy, hands on bench if hard.",
-          "cue": "No sagging hips."
-        },
-        {
-          "name": "Side Plank",
+          "name": "Side Plank (finisher)",
           "dose": "2 × 30 sec / side",
-          "how": "On one forearm, elbow under shoulder, feet stacked, body in one line. Push hips up and hold.",
-          "cue": "Glute med — fights late-race form collapse."
-        },
-        {
-          "name": "Calf Raise (both legs)",
-          "dose": "2 × 15",
-          "how": "Both feet on step edge, rise, pause 1 sec, lower slowly below level. Hold DBs to add load.",
-          "cue": "Friday = both legs; Monday = single-leg."
+          "how": "On one forearm, elbow under shoulder, feet stacked, body in one line. Push hips up and hold. Folded in from the retired Friday session.",
+          "cue": "Glute med — the muscle that fights late-race form collapse. Worth the extra two minutes."
         }
       ]
     },
@@ -281,7 +251,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -388,7 +358,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -495,7 +465,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -708,7 +678,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -815,7 +785,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -922,7 +892,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -1030,7 +1000,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -1278,7 +1248,7 @@
       "week": 11,
       "startDate": "2026-09-28",
       "endDate": "2026-10-04",
-      "plannedMiles": 48,
+      "plannedMiles": 51,
       "label": null,
       "scotland": false,
       "days": [
@@ -1300,6 +1270,11 @@
           "dayOfWeek": "Tue",
           "workout": "8 mi w/ 6 × 800m @ IV",
           "type": "quality",
+          "pmRun": {
+            "workout": "3 mi easy shakeout",
+            "miles": 3,
+            "detail": "Evening double, at least 6 hours after the morning reps — 8+ is better. TRULY easy: 9:30–10:00/mi, conversational start to finish. The job is blood flow and flushing the legs after the intervals, NOT fitness. If you cannot talk, you are running it too fast and it has become a third quality day. This is the first thing to cut if anything twinges."
+          },
           "miles": 8,
           "detail": "Warm up 2 mi easy + 4 strides. Run 6 × 800m at interval pace (6:30–6:40/mi) with equal-time easy jog between reps. Cool down to 8 total. These build your VO2max back toward 56+.",
           "strength": null,
@@ -1344,7 +1319,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -1386,7 +1361,7 @@
       "week": 12,
       "startDate": "2026-10-05",
       "endDate": "2026-10-11",
-      "plannedMiles": 52,
+      "plannedMiles": 55,
       "label": null,
       "scotland": false,
       "days": [
@@ -1408,6 +1383,11 @@
           "dayOfWeek": "Tue",
           "workout": "8 mi w/ 5 × 1000m @ IV",
           "type": "quality",
+          "pmRun": {
+            "workout": "3 mi easy shakeout",
+            "miles": 3,
+            "detail": "Evening double, at least 6 hours after the morning reps — 8+ is better. TRULY easy: 9:30–10:00/mi, conversational start to finish. The job is blood flow and flushing the legs after the intervals, NOT fitness. If you cannot talk, you are running it too fast and it has become a third quality day. This is the first thing to cut if anything twinges."
+          },
           "miles": 8,
           "detail": "Warm up 2 mi easy + 4 strides. Run 5 × 1000m at interval pace (6:30–6:40/mi) with equal-time easy jog between reps. Cool down to 8 total. These build your VO2max back toward 56+.",
           "strength": null,
@@ -1452,7 +1432,7 @@
           "type": "easy",
           "miles": 5,
           "detail": "5 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -1494,7 +1474,7 @@
       "week": 13,
       "startDate": "2026-10-12",
       "endDate": "2026-10-18",
-      "plannedMiles": 52,
+      "plannedMiles": 55,
       "label": "PEAK WEEK",
       "scotland": false,
       "days": [
@@ -1516,6 +1496,11 @@
           "dayOfWeek": "Tue",
           "workout": "9 mi w/ 4 × 1200m @ IV",
           "type": "quality",
+          "pmRun": {
+            "workout": "3 mi easy shakeout",
+            "miles": 3,
+            "detail": "Evening double, at least 6 hours after the morning reps — 8+ is better. TRULY easy: 9:30–10:00/mi, conversational start to finish. The job is blood flow and flushing the legs after the intervals, NOT fitness. If you cannot talk, you are running it too fast and it has become a third quality day. This is the first thing to cut if anything twinges."
+          },
           "miles": 9,
           "detail": "Warm up 2 mi easy + 4 strides. Run 4 × 1200m at interval pace (6:30–6:40/mi) with equal-time easy jog between reps. Cool down to 9 total. These build your VO2max back toward 56+.",
           "strength": null,
@@ -1560,7 +1545,7 @@
           "type": "easy",
           "miles": 5,
           "detail": "5 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,
@@ -1668,7 +1653,7 @@
           "type": "easy",
           "miles": 4,
           "detail": "4 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
-          "strength": "B-light",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 10,

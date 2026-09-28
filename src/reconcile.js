@@ -2,7 +2,7 @@
 // Snapshot pulled from Strava on Sep 4, 2026 (weeks 1-7).
 // Paces are whole-run averages including warm-up / cool-down.
 
-export const SNAPSHOT = 'Pulled from Strava · Sep 12, 2026 — through this morning’s 18-miler'
+export const SNAPSHOT = 'Pulled from Strava · Sep 28, 2026 — Scotland complete, weeks 1–10 closed'
 
 export const SCOREBOARD = [
   { n: 1, dates: 'Jul 20–26', plan: 36, actual: '36.1', delta: '+0.1',
@@ -26,47 +26,55 @@ export const SCOREBOARD = [
   { n: 7, dates: 'Aug 31–Sep 6', plan: 49, actual: '44.3', delta: '−4.7',
     long: '18 → 12.1 mi @ 9:31 ✗', quality: '4×1200 @ 6:35 ✓ · MP 4 mi @ 7:19 (plan 5)',
     str: '1/1', core: '0/1', yoga: '6/7', status: 'bad' },
-  { n: 8, dates: 'Sep 7–13', plan: 45, actual: '35.0*', delta: '−6.0',
+  { n: 8, dates: 'Sep 7–13', plan: 45, actual: '39.0', delta: '−6.0',
     long: '18 → 18.0 mi @ 9:36 ✓', quality: 'TEMPO 5 mi @ 7:12 ✓✓ · intervals missed ✗',
-    str: '1/1', core: '1/1', yoga: '2/6', status: 'warn' },
+    str: '1/1', core: '1/1', yoga: '3/7', status: 'warn' },
+  { n: 9, dates: 'Sep 14–20', plan: '~34', actual: '28.8', delta: '−5.2',
+    long: "LONG 90′ → 88′ / 8.3 mi ✓", quality: '4×1200 @ 6:30 ✓ (made up W8) · 5 mi w/ pace @ 7:54 on hills',
+    str: '1/1', core: '0/1', yoga: '0/7', status: 'live' },
+  { n: 10, dates: 'Sep 21–27', plan: '~38', actual: '29.6', delta: '−8.4',
+    long: 'LONG 2 hr → 18.8 mi / 2:57 ✓✓', quality: '4×800 @ 6:45 ✓ · 2 big hikes (Storr, Arthur’s Seat)',
+    str: '0/1', core: '0/1', yoga: '0/7', status: 'live' },
 ]
 
 export const SCOREBOARD_NOTE =
-  '* Week 8 through Saturday Sep 12 — Sunday’s 4 mi recovery still to come, which brings it to ~39 of 45. ' +
-  'Block total to date: 318 miles.'
+  'Weeks 9–10 were the planned Scotland recovery block — under target by design, and you were told not to chase the miles. ' +
+  'On top of the running, weeks 9–10 added roughly 8 miles of hiking with 556 m of climbing (Old Man of Storr, Arthur’s Seat). ' +
+  'Block total through week 10: 382 miles.'
 
 export const COMPLETION = [
-  { label: 'Weekly mileage targets hit', value: '6 of 8 weeks', pct: 75 },
-  { label: 'Long runs as prescribed', value: '7 of 8 — only Sep 5 missed', pct: 88 },
-  { label: 'Intervals', value: '5 of 6 — all on pace when run', pct: 83 },
-  { label: 'Tempo / MP volume', value: 'was 65%, now ~75% after the 5-miler', pct: 75 },
-  { label: 'Strength A (Mon)', value: '9 of 9 — the habit that stuck', pct: 100 },
+  { label: 'Weekly mileage targets hit', value: '6 of 10 (wks 9–10 under by design)', pct: 60 },
+  { label: 'Long runs completed', value: '10 of 10 — every single one', pct: 100 },
+  { label: 'Intervals', value: '7 of 8 — all on pace when run', pct: 88 },
+  { label: 'Tempo / MP volume', value: '~78% of prescribed miles', pct: 78 },
+  { label: 'Strength A (Mon)', value: '10 of 11', pct: 91 },
   { label: 'Strength B (Fri)', value: '0 of 9 — RETIRED Sep 12', pct: 0 },
-  { label: 'Core', value: '6 of 9', pct: 67 },
-  { label: 'Yoga', value: '43 of 55 days', pct: 78 },
+  { label: 'Core', value: '6 of 11', pct: 55 },
+  { label: 'Yoga', value: '44 of 70 days — collapsed in Scotland', pct: 63 },
 ]
 
 export const SINCE_LAST = {
-  title: 'Since the last check (Sep 5–12)',
+  title: 'Scotland (Sep 14–27) — the fitness test, passed',
   wins: [
-    ['Wed Sep 9 — the tempo, finally', 'Five continuous miles at 7:12, your first full-volume tempo of the entire block and eight PRs on the day. Heat-adjusted that is roughly 6:55 — the fast end of the prescribed band. This was action item #1 and you closed it.'],
-    ['Sat Sep 12 — you got the 18', 'Longest run of the cycle at 18.00 mi, 9:36 average, heart rate 145 avg / 160 max. Miles 12–15 were your FASTEST of the day (9:09, 9:14, 9:00, 9:09) at mile 14 of an 18-miler. That is a real aerobic result.'],
-    ['You salvaged the week', 'Tuesday went badly, so you moved the tempo up to Wednesday instead of letting the week collapse. That is the single most coachable thing in this whole log.'],
+    ['Sat Sep 26 — Edinburgh, 18.8 mi', 'The headline. 18.78 mi in 2:57 at 9:27/mi with 338 m of climbing — and an average heart rate of 137.7, max 158. Longest run of the cycle, twice the climbing of any Texas long run, and SEVEN BPM LOWER than either of them.'],
+    ['No late fade, on hills', 'Sep 12 gave back 44 sec/mi over the last three miles. Sep 26 closed at 9:19 and 9:24 for the final full miles, with the only slow split (10:18) being a 2.5% climb. The thing we set out to fix, fixed.'],
+    ['The half-marathon split inside it', '2:02:36 — that is 5 min 46 sec faster than the half split inside your Sep 12 eighteen, at lower heart rate, on a hillier course.'],
+    ['You made up the missed intervals', 'Sep 15, before you even flew: 4×800 at 6:30. Then 4×800 at 6:45 in the Highlands on Sep 22. You did not let the travel block eat the quality.'],
   ],
   misses: [
-    ['Sat Sep 5 — 18 became 12.1', 'Overslept, started late, ran into the heat. Cost: 5.9 miles and the week’s headline session.'],
-    ['Tue Sep 8 — intervals skipped', 'Felt unwell and cut it to 2.7 mi. First interval session missed all block.'],
-    ['Strength B still 0 for 9', 'Nine Fridays, nine skips, while Mondays stay a perfect 9 for 9.'],
-    ['Yoga dropped off', '2 of 6 days this week versus a 6-of-7 habit through August.'],
+    ['Yoga: 0 of 14 days', 'It fell off entirely in Scotland and had already slipped before you left. Easiest thing to restart this week.'],
+    ['Core: 0 of 2 weeks', 'Also gone for the whole trip. Wednesday circuit resumes now.'],
+    ['One Monday strength missed', 'Sep 21. The other ten are done — this one is noise, not a pattern.'],
   ],
 }
 
 export const FATIGUE = {
-  title: 'The honest read: you are tired, and the timing is lucky',
+  title: 'Verdict: the heat hypothesis was right, and you are ahead of where we thought',
   body: [
-    'Compare the two big long runs back to back. Aug 29 was 16.2 mi at 9:11 with an average heart rate of 143. Today was 18.0 mi at 9:36 with an average of 145 — 26 sec/mi slower for 1.8 more miles at the same effort. The late fade also widened: you gave back 44 sec/mi over the last three miles versus 40 on Aug 29.',
-    'Add the oversleep, the "not feeling good" Tuesday, two straight weeks under target and yoga falling off, and the picture is consistent. This is not lost fitness — it is nine weeks of accumulated load in a Texas summer finally showing up.',
-    'Which makes the calendar a gift: Scotland starts Monday. Two genuinely reduced weeks in cool air land exactly where your body needs them. Do not try to make up the missing miles over there. Run by time, keep the two long runs, let everything else go.',
+    'For nine weeks the read was that your paces looked worse than your fitness because you were training in a Texas summer. Scotland was the controlled experiment. Here is the result:',
+    'Aug 29, Texas — 16.2 mi at 9:11, HR 143, 160 m climb.  Sep 12, Texas — 18.0 mi at 9:36, HR 145, 191 m climb.  Sep 26, Edinburgh — 18.8 mi at 9:27, HR 138, 338 m climb.',
+    'The longest run, on double the climbing, at the lowest heart rate of the three. That is not a two-week freshness bounce — freshness does not buy you 7 bpm and 27 sec/mi on the half-marathon split simultaneously. Cool air was worth roughly what the 4% correction estimated, and your aerobic base is genuinely where the plan assumed.',
+    'Consequence: the long-run and easy pace bands were set slightly optimistic back in July, from your old fitness. They have been widened (long run 8:45–9:20, easy 9:00–9:45) to match what you actually run at true easy effort. Nothing about the 7:25 marathon-pace target changes — your Sep 3 MP miles at 7:18–7:21 in heat already cleared it.',
   ],
 }
 
@@ -80,16 +88,16 @@ export const PACE_CHECK = [
   { type: 'Marathon pace', prescribed: '7:25', actual: '7:18–7:21', adjusted: '≈7:01',
     verdict: 'Faster than goal MP. Sep 3 ran 7:18 / 7:21 / 7:19, then faded to 8:06 on the fourth.',
     status: 'good' },
-  { type: 'Long run', prescribed: '8:15–9:00', actual: '8:30–9:36', adjusted: '≈9:13',
-    verdict: 'Drifting slower as distance grows. Sep 12: 18 mi at 9:36, HR 145 — easy effort, but 26 sec/mi off Aug 29 for 1.8 more miles. Fatigue, not fitness.',
-    status: 'warn' },
-  { type: 'Easy / recovery', prescribed: '8:30–9:15', actual: '9:00–10:14', adjusted: '≈9:23',
-    verdict: 'Slower than the band, and that is fine — arguably correct. Do not speed these up.',
-    status: 'live' },
+  { type: 'Long run', prescribed: '8:45–9:20 (widened)', actual: '9:27 @ HR 138', adjusted: '≈9:10 grade-adj',
+    verdict: 'Band was too aggressive, not you. Sep 26: 18.8 mi, 338 m climb, HR 138 — the lowest of any long run this block. Effort is the governor here, not the watch.',
+    status: 'good' },
+  { type: 'Easy / recovery', prescribed: '9:00–9:45 (widened)', actual: '9:00–10:14', adjusted: '—',
+    verdict: 'Band moved to match reality. These were never too slow — 9:00–9:45 is exactly right for a 3:15 marathoner. Do not speed them up.',
+    status: 'good' },
 ]
 
 export const HEAT = {
-  title: 'The heat factor — why the paces look worse than the fitness',
+  title: 'The heat factor — the hypothesis, now confirmed',
   body: [
     'You trained through a North Texas July and August. Every run happened in 80°F+ air with high dew points. The standard correction for those conditions is a 4–6% pace penalty at aerobic effort. Applying a conservative 4%:',
   ],
@@ -99,7 +107,7 @@ export const HEAT = {
     ['Your 9:47 easy days', '≈9:23 in cool air'],
   ],
   after: [
-    'That puts tempo and long-run paces right inside the prescribed bands.',
+    'CONFIRMED Sep 26. Edinburgh delivered 18.8 hilly miles at 9:27 with HR 138 versus 18.0 flat-ish Texas miles at 9:36 with HR 145. Cool air was worth roughly what this correction predicted.',
     'Supporting evidence, not just a formula: on Sep 3 you held 7:18 / 7:21 / 7:19 while heart rate climbed 157 → 165 → 168 at constant pace. Upward drift at a fixed speed is the classic heat signature — cardiac drift, not lost fitness. The mile-4 fade to 8:06 is what happens when that drift finally caps you.',
   ],
 }
@@ -107,22 +115,24 @@ export const HEAT = {
 export const ACTIONS = [
   { n: 1, title: 'Tempo volume — CLOSED, now keep it', done: true,
     body: 'Sep 9 was the fix: five continuous miles at 7:12. That was the single biggest gap in the block and you closed it. Week 11 onward, keep protecting it — if a session has to shrink, cut the warm-up, never the tempo miles.' },
-  { n: 2, title: 'Scotland is recovery, not catch-up',
-    body: 'You are nine weeks deep and it shows. Do NOT try to win back the 11 miles you are down. Run by time, protect the two long runs (90 min and 2 hr), skip anything that feels like a grind. Coming home fresh is worth more than any mile you could bank over there.' },
+  { n: 2, title: 'Scotland recovery — CLOSED, and it worked', done: true,
+    body: 'You ran it exactly right: under target on volume, both long runs protected, quality kept alive, two big hikes. You came home with the lowest long-run heart rate of the entire block. This is the reason weeks 11–13 can now be pushed.' },
   { n: 3, title: 'Friday strength — CLOSED, retired Sep 12', done: true,
     body: 'Nine weeks, nine skips. Strength B is gone. Its two worthwhile movements moved to Monday: the split squat now rotates with the reverse lunge week to week, and a side plank joins the plank as a second finisher. Monday grows from 30 to 35 minutes; Fridays are easy run plus yoga, nothing else. The plan now matches what you actually do.' },
-  { n: 4, title: 'Guard the sleep before long runs',
-    body: 'Sep 5 was lost to an oversleep and a late start into the heat — that one decision cost 5.9 miles and the week. Lay kit out the night before and set two alarms on long-run eves. It is the cheapest fix on this list.' },
-  { n: 5, title: 'Week 11 is the re-test',
-    body: 'Sep 28–Oct 4, first long run back in cool air after two easy weeks: 18 mi with the last 4 at MP. If those close near 7:25 without heroics, sub-3:15 is confirmed and we lock paces for the final block. Ping me that week and I will re-pull Strava.' },
+  { n: 4, title: 'Restart yoga and core — today',
+    body: 'Yoga went 0 for 14 in Scotland and core 0 for 2 weeks. You are about to run the three biggest weeks of the cycle at 51 / 55 / 55 with a new Tuesday double. The 10-minute evening flow and the Wednesday core circuit are exactly what keeps that volume from turning into a niggle. Cheapest insurance on the list.' },
+  { n: 5, title: 'The Tuesday double is a bonus, not a pillar',
+    body: 'Three easy miles, six-plus hours after the morning reps, at 9:30–10:00. If the pace creeps under 9:15 it has quietly become a third quality day and it will cost you Saturday. It is also the FIRST thing to cut if anything twinges — before the long run, before the tempo, before anything.' },
+  { n: 6, title: 'Sat Oct 3 is the re-test that matters',
+    body: '18 mi with the last 4 at marathon pace, in cool air, off a real recovery block. If those four close near 7:25 without heroics, sub-3:15 stops being a target and becomes a plan. Ping me after and I will re-pull.' },
 ]
 
 export const BOTTOM_LINE =
-  'This fortnight looks worse on the scoreboard than it is in the legs. Yes — two weeks under target, a blown 18 on Sep 5, and a ' +
-  'missed interval session. But the two things that actually move a marathon both happened: you ran five continuous tempo miles at ' +
-  '7:12, closing the single biggest gap in the block, and you put an 18-miler in the bank this morning with your fastest miles ' +
-  'coming at mile 14. Sub-3:15 is still on. You are carrying real fatigue into Scotland, and Scotland is a recovery block — use it ' +
-  'as one, then we re-test paces in cool air on week 11.'
+  'Scotland answered the question. You ran 18.8 hilly miles in Edinburgh at a lower heart rate than either Texas long run, with no ' +
+  'late fade and a half-marathon split almost six minutes quicker than two weeks earlier. Every long run in this block — all ten — is ' +
+  'done. The heat was the tax, not your fitness. Weeks 11–13 now go 51 / 55 / 55 with the new Tuesday double and two twenties, which ' +
+  'is more than the plan originally asked for and is justified by the data. Restart the yoga and core, keep the double honest, and ' +
+  'treat Oct 3 as the dress rehearsal for the answer. Sub-3:15 is live.'
 
 export const PLAN_CHANGES = {
   title: 'Plan changes made Sep 4',
@@ -134,6 +144,11 @@ export const PLAN_CHANGES = {
     ['Week 12 · Oct 5–11', 'Long run 18 → 20 (last 4 @ MP)', 'Week total 50 → 52'],
     ['Week 13 · Oct 12–18', 'Peak 20 unchanged', '52'],
     ['Strength · from Sep 14', 'Friday Strength B retired after 0 of 9. Split squat + side plank folded into Monday', 'Mon 30 → 35 min'],
+    ['Tuesdays · wks 11–13', 'NEW: 3 mi easy PM shakeout added after the morning reps', '+3 mi/wk'],
+    ['Week 11 · Sep 28–Oct 4', 'Tuesday double added', 'Week total 48 → 51'],
+    ['Week 12 · Oct 5–11', 'Tuesday double added', 'Week total 52 → 55'],
+    ['Week 13 · Oct 12–18', 'Tuesday double added — new peak', 'Week total 52 → 55'],
+    ['Paces · from Sep 28', 'Long run 8:15–9:00 → 8:45–9:20; easy 8:30–9:15 → 9:00–9:45. MP unchanged at 7:25', 'matched to real data'],
   ],
-  note: 'Net effect: five runs of 18+ miles and two twenties, versus three and one in the original plan. Peak weekly mileage still tops out at 52.',
+  note: 'Net effect: five runs of 18+ miles and two twenties, versus three and one in the original plan. Peak weekly mileage now 55 — above the 52 we settled on in July, below the 60 you originally wanted, and supported by the Edinburgh heart-rate data.',
 }

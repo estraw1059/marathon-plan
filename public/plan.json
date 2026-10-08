@@ -6,7 +6,7 @@
   "planStart": "2026-07-20",
   "raceDate": "2026-11-07",
   "totalWeeks": 16,
-  "generatedAt": "2026-09-28T20:40:57.178Z",
+  "generatedAt": "2026-10-08T22:06:13.726Z",
   "revision": "2026-09-04 — long-run progression reworked (18/18 pre-Scotland, 18/20/20 in wks 11-13)",
   "paces": [
     {
@@ -1361,8 +1361,8 @@
       "week": 12,
       "startDate": "2026-10-05",
       "endDate": "2026-10-11",
-      "plannedMiles": 55,
-      "label": null,
+      "plannedMiles": "~10",
+      "label": "RESET — LEFT KNEE/QUAD",
       "scotland": false,
       "days": [
         {
@@ -1370,8 +1370,8 @@
           "dayOfWeek": "Mon",
           "workout": "REST",
           "type": "rest",
-          "detail": "Full rest from running. Strength work today keeps the day productive without pounding. Sleep is training too — aim for 8 hours.",
-          "strength": "A",
+          "detail": "Rewritten Oct 8 around left knee/quad tightness. No strength this week — nothing that loads a deep knee bend. Gentle mobility only.",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 15,
@@ -1381,15 +1381,10 @@
         {
           "date": "2026-10-06",
           "dayOfWeek": "Tue",
-          "workout": "8 mi w/ 5 × 1000m @ IV",
-          "type": "quality",
-          "pmRun": {
-            "workout": "3 mi easy shakeout",
-            "miles": 3,
-            "detail": "Evening double, at least 6 hours after the morning reps — 8+ is better. TRULY easy: 9:30–10:00/mi, conversational start to finish. The job is blood flow and flushing the legs after the intervals, NOT fitness. If you cannot talk, you are running it too fast and it has become a third quality day. This is the first thing to cut if anything twinges."
-          },
-          "miles": 8,
-          "detail": "Warm up 2 mi easy + 4 strides. Run 5 × 1000m at interval pace (6:30–6:40/mi) with equal-time easy jog between reps. Cool down to 8 total. These build your VO2max back toward 56+.",
+          "workout": "3.5 mi — cut short",
+          "type": "easy",
+          "miles": 3.5,
+          "detail": "Already run (Oct 6). Abandoned halfway feeling stuffy with pollen. Logged here for the record.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1400,53 +1395,49 @@
         {
           "date": "2026-10-07",
           "dayOfWeek": "Wed",
-          "workout": "6 mi easy",
-          "type": "easy",
-          "miles": 6,
-          "detail": "6 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
+          "workout": "REST",
+          "type": "rest",
+          "detail": "Full rest. 20 min yoga with an emphasis on quads, hip flexors and IT band. Foam roll quad and lateral thigh — gently, not aggressively.",
           "strength": null,
-          "core": true,
+          "core": false,
           "yoga": {
-            "minutes": 10,
-            "kind": "Post-run hips & hamstrings"
+            "minutes": 20,
+            "kind": "Restorative / deep stretch"
           }
         },
         {
           "date": "2026-10-08",
           "dayOfWeek": "Thu",
-          "workout": "8 mi w/ 6 mi @ MP",
-          "type": "quality",
-          "miles": 8,
-          "detail": "Warm up 2 mi easy. 6 continuous miles at marathon pace (7:25/mi) — lock in the rhythm, practice relaxed form. Cool down to 8 total.",
+          "workout": "REST",
+          "type": "rest",
+          "detail": "Full rest. Same mobility work. Walking is fine and probably helpful — gentle movement usually beats total immobility for tightness.",
           "strength": null,
           "core": false,
           "yoga": {
-            "minutes": 10,
-            "kind": "Post-run hips & hamstrings"
+            "minutes": 20,
+            "kind": "Restorative / deep stretch"
           }
         },
         {
           "date": "2026-10-09",
           "dayOfWeek": "Fri",
-          "workout": "5 mi easy",
-          "type": "easy",
-          "miles": 5,
-          "detail": "5 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
+          "workout": "REST or 30 min walk",
+          "type": "rest",
+          "detail": "Rest or an easy 30 minute walk. Nothing that makes the leg feel worse.",
           "strength": null,
           "core": false,
           "yoga": {
-            "minutes": 10,
-            "kind": "Post-run hips & hamstrings"
+            "minutes": 15,
+            "kind": "Full-body flow"
           }
         },
         {
           "date": "2026-10-10",
           "dayOfWeek": "Sat",
-          "workout": "LONG 20 mi",
-          "type": "long",
-          "note": "Last 4 @ MP",
-          "miles": 20,
-          "detail": "Twenty #1. First 16 at long-run pace, last 4 at marathon pace. Full race-day fueling rehearsal — race breakfast, race gels, race kit.",
+          "workout": "TEST RUN: 3 mi very easy",
+          "type": "easy",
+          "miles": 3,
+          "detail": "ONLY if the tightness is clearly better than Thursday. 3 miles at 10:00+/mi on flat ground. Rules: if it feels tight but settles as you warm up, finish and call it a win. If anything becomes PAIN, or your stride changes to protect the leg, stop and walk home — no negotiating. This is a diagnostic, not a workout.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1457,10 +1448,10 @@
         {
           "date": "2026-10-11",
           "dayOfWeek": "Sun",
-          "workout": "5 mi recovery",
+          "workout": "3.5 mi easy",
           "type": "easy",
-          "miles": 5,
-          "detail": "5 miles at the slow end of easy (9:00+/mi is fine). Legs will be heavy from the long run — that’s the point. Finish with 20 min restorative yoga.",
+          "miles": 3.5,
+          "detail": "Only if Saturday went fine. Same rules, same pace. Then reassess before week 13.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1474,8 +1465,8 @@
       "week": 13,
       "startDate": "2026-10-12",
       "endDate": "2026-10-18",
-      "plannedMiles": 55,
-      "label": "PEAK WEEK",
+      "plannedMiles": "~33",
+      "label": "RETURN — conditional",
       "scotland": false,
       "days": [
         {
@@ -1483,8 +1474,8 @@
           "dayOfWeek": "Mon",
           "workout": "REST",
           "type": "rest",
-          "detail": "Full rest from running. Strength work today keeps the day productive without pounding. Sleep is training too — aim for 8 hours.",
-          "strength": "A",
+          "detail": "Rest + light Strength A IF pain-free: skip the goblet squat and lunge/split squat (deep knee load), keep RDL, calf raise, row, press, planks. Add the side plank — glute med work helps knee tracking.",
+          "strength": "A-light",
           "core": false,
           "yoga": {
             "minutes": 15,
@@ -1494,15 +1485,10 @@
         {
           "date": "2026-10-13",
           "dayOfWeek": "Tue",
-          "workout": "9 mi w/ 4 × 1200m @ IV",
-          "type": "quality",
-          "pmRun": {
-            "workout": "3 mi easy shakeout",
-            "miles": 3,
-            "detail": "Evening double, at least 6 hours after the morning reps — 8+ is better. TRULY easy: 9:30–10:00/mi, conversational start to finish. The job is blood flow and flushing the legs after the intervals, NOT fitness. If you cannot talk, you are running it too fast and it has become a third quality day. This is the first thing to cut if anything twinges."
-          },
-          "miles": 9,
-          "detail": "Warm up 2 mi easy + 4 strides. Run 4 × 1200m at interval pace (6:30–6:40/mi) with equal-time easy jog between reps. Cool down to 9 total. These build your VO2max back toward 56+.",
+          "workout": "5 mi easy",
+          "type": "easy",
+          "miles": 5,
+          "detail": "5 miles easy, 9:30+/mi. No reps this week. The intervals are gone from week 13 — at four weeks out they add risk and almost no fitness.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1513,10 +1499,10 @@
         {
           "date": "2026-10-14",
           "dayOfWeek": "Wed",
-          "workout": "6 mi easy",
+          "workout": "5 mi easy",
           "type": "easy",
-          "miles": 6,
-          "detail": "6 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
+          "miles": 5,
+          "detail": "5 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
           "strength": null,
           "core": true,
           "yoga": {
@@ -1527,10 +1513,10 @@
         {
           "date": "2026-10-15",
           "dayOfWeek": "Thu",
-          "workout": "8 mi w/ 6 mi tempo/MP",
+          "workout": "6 mi easy + 4 strides",
           "type": "quality",
-          "miles": 8,
-          "detail": "Warm up 2 mi. 6 miles alternating tempo (6:55–7:05) and MP (7:25) by the mile. Cool down briefly. Biggest midweek session of the block.",
+          "miles": 6,
+          "detail": "Warm up thoroughly. 6 easy miles, then 4 × 20 sec strides on flat ground — the first time you ask the leg for turnover. Back off at the first sign of tightness returning.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1541,25 +1527,24 @@
         {
           "date": "2026-10-16",
           "dayOfWeek": "Fri",
-          "workout": "5 mi easy",
-          "type": "easy",
-          "miles": 5,
-          "detail": "5 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
+          "workout": "REST or 3 mi easy",
+          "type": "rest",
+          "detail": "Optional 3 easy miles. If in any doubt, rest — Saturday matters more.",
           "strength": null,
           "core": false,
           "yoga": {
-            "minutes": 10,
-            "kind": "Post-run hips & hamstrings"
+            "minutes": 20,
+            "kind": "Restorative / deep stretch"
           }
         },
         {
           "date": "2026-10-17",
           "dayOfWeek": "Sat",
-          "workout": "LONG 20 mi",
+          "workout": "LONG 13 mi",
           "type": "long",
-          "note": "Steady — fuel it",
-          "miles": 20,
-          "detail": "Twenty #2 and the peak of the cycle. Steady long-run pace, full fueling plan, race-day breakfast beforehand. By now you will have run four 18+ efforts — this one is confirmation, not discovery. Nothing heroic, just get it done.",
+          "note": "Easy — no MP work",
+          "miles": 13,
+          "detail": "Your return long run: 13 miles entirely at easy pace. No marathon-pace segment, no pushing. The job is to prove the leg handles two hours, not to build fitness you already have.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1587,8 +1572,8 @@
       "week": 14,
       "startDate": "2026-10-19",
       "endDate": "2026-10-25",
-      "plannedMiles": 44,
-      "label": null,
+      "plannedMiles": "~41",
+      "label": "LAST REAL WEEK",
       "scotland": false,
       "days": [
         {
@@ -1597,7 +1582,7 @@
           "workout": "REST",
           "type": "rest",
           "detail": "Full rest from running. Strength work today keeps the day productive without pounding. Sleep is training too — aim for 8 hours.",
-          "strength": "A",
+          "strength": "A-light",
           "core": false,
           "yoga": {
             "minutes": 15,
@@ -1607,10 +1592,10 @@
         {
           "date": "2026-10-20",
           "dayOfWeek": "Tue",
-          "workout": "7 mi w/ 5 × 800m @ IV",
+          "workout": "6 mi w/ 4 × 800m @ IV",
           "type": "quality",
-          "miles": 7,
-          "detail": "Warm up 2 mi easy + 4 strides. Run 5 × 800m at interval pace (6:30–6:40/mi) with equal-time easy jog between reps. Cool down to 7 total. These build your VO2max back toward 56+.",
+          "miles": 6,
+          "detail": "Warm up 2 mi. 4 × 800m at interval pace with equal jog. Only if week 13 was clean. This is sharpening, not building — it should feel comfortable.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1621,10 +1606,10 @@
         {
           "date": "2026-10-21",
           "dayOfWeek": "Wed",
-          "workout": "6 mi easy",
+          "workout": "5 mi easy",
           "type": "easy",
-          "miles": 6,
-          "detail": "6 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
+          "miles": 5,
+          "detail": "5 miles at easy pace (8:30–9:15/mi). Truly conversational — if in doubt, slow down. These miles build your aerobic engine.",
           "strength": null,
           "core": true,
           "yoga": {
@@ -1638,7 +1623,7 @@
           "workout": "7 mi w/ 4 mi @ MP",
           "type": "quality",
           "miles": 7,
-          "detail": "Warm up 2 mi easy. 4 continuous miles at marathon pace (7:25/mi) — lock in the rhythm, practice relaxed form. Cool down to 7 total.",
+          "detail": "Warm up 2 mi. 4 miles at marathon pace (7:25). This is your confidence check — on Oct 1 you ran 5 at exactly this pace, so you know it is there.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1663,11 +1648,11 @@
         {
           "date": "2026-10-24",
           "dayOfWeek": "Sat",
-          "workout": "LONG 16 mi",
+          "workout": "LONG 15 mi",
           "type": "long",
-          "note": "Dress rehearsal: 8 @ MP",
-          "miles": 16,
-          "detail": "16 miles with the middle 8 at marathon pace. Wear race kit and shoes, use race fueling, race breakfast. Treat it like Nov 7.",
+          "note": "Dress rehearsal: 6 @ MP",
+          "miles": 15,
+          "detail": "The last long run of the cycle, and the dress rehearsal. 15 miles with the middle 6 at marathon pace. Race kit, race shoes, race breakfast, race fueling. Treat it like Nov 7. Cut back from 16 w/ 8 @ MP to protect the leg.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1695,7 +1680,7 @@
       "week": 15,
       "startDate": "2026-10-26",
       "endDate": "2026-11-01",
-      "plannedMiles": 34,
+      "plannedMiles": 32,
       "label": "TAPER",
       "scotland": false,
       "days": [
@@ -1704,7 +1689,7 @@
           "dayOfWeek": "Mon",
           "workout": "REST",
           "type": "rest",
-          "detail": "Rest + final light Strength A (drop to 2 sets, moderate weight). Last strength session of the cycle.",
+          "detail": "Rest + final light Strength A (2 sets, moderate weight). Last strength session of the cycle.",
           "strength": "A-light",
           "core": false,
           "yoga": {
@@ -1715,10 +1700,10 @@
         {
           "date": "2026-10-27",
           "dayOfWeek": "Tue",
-          "workout": "6 mi w/ 4 × 800m @ IV",
+          "workout": "5 mi w/ 4 × 800m @ IV",
           "type": "quality",
-          "miles": 6,
-          "detail": "Warm up 2 mi. 4 × 800m at interval pace, equal jog rest. Staying sharp, not building — this should feel easy.",
+          "miles": 5,
+          "detail": "Warm up 1.5 mi. 4 × 800m at interval pace, equal jog rest. Staying sharp, not building — this should feel easy.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1785,10 +1770,10 @@
         {
           "date": "2026-11-01",
           "dayOfWeek": "Sun",
-          "workout": "5 mi recovery",
+          "workout": "4 mi recovery",
           "type": "easy",
-          "miles": 5,
-          "detail": "5 miles at the slow end of easy (9:00+/mi is fine). Legs will be heavy from the long run — that’s the point. Finish with 20 min restorative yoga.",
+          "miles": 4,
+          "detail": "4 miles at the slow end of easy (9:00+/mi is fine). Legs will be heavy from the long run — that’s the point. Finish with 20 min restorative yoga.",
           "strength": null,
           "core": false,
           "yoga": {

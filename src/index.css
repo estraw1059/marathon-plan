@@ -369,3 +369,62 @@ footer {
   background: rgba(185,174,209,.35); border-radius: 4px; padding: 1px 5px;
   align-self: flex-start;
 }
+
+/* ---- PlanApp additions (Rachel's page): Peloton day type + priority color-coding ----
+   Fill color = day TYPE. Thick left edge + badge = PRIORITY (key / important / optional). */
+:root {
+  --bike: #e4eefa;
+  --bike-b: #7aa7d6;
+  --p-key: #1a2e4a;
+  --p-imp: #2d5f8a;
+  --p-opt: #c4cbd4;
+}
+.day.bike { background: var(--bike); }
+.chip.bike, .tag.bike { background: var(--bike); border-color: var(--bike-b); }
+.modal-title.bike { color: var(--p-imp); }
+
+.day.pri-key { border: 2px solid var(--p-key); border-left-width: 8px; }
+.day.pri-key .day-run { font-weight: 800; }
+.day.pri-important { border-left: 6px solid var(--p-imp); }
+.day.pri-optional { border: 1px dashed #b5bdc8; border-left: 6px solid var(--p-opt); }
+.day.pri-optional .day-run { color: var(--gray); font-weight: 600; }
+
+.pri-tag {
+  font-size: .58rem; font-weight: 800; letter-spacing: .06em;
+  padding: 1px 6px; border-radius: 4px; line-height: 1.4;
+}
+.pri-tag.key { background: var(--p-key); color: #fff; }
+.pri-tag.important { background: #fff; color: var(--p-imp); border: 1px solid var(--p-imp); }
+.pri-tag.optional { background: transparent; color: var(--gray); border: 1px dashed #b5bdc8; }
+
+.legend-label {
+  font-size: .66rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--gray); align-self: center; margin-right: 2px;
+}
+.legend-pri { margin-left: 0; }
+.chip.p-key { background: var(--p-key); color: #fff; border-color: var(--p-key); }
+.chip.p-important { background: #fff; color: var(--p-imp); border: 1px solid var(--p-imp); border-left-width: 5px; }
+.chip.p-optional { background: #fff; color: var(--gray); border-style: dashed; }
+@media (max-width: 860px) { .toolbar:has(.legend-pri) { position: static; } }
+
+.week-key {
+  font-size: .72rem; font-weight: 700; color: var(--p-key);
+  background: #e7edf4; border: 1px solid #c3d0de; padding: 2px 8px; border-radius: 4px;
+}
+.week-note { margin: 4px 0 0; color: var(--gray); font-size: .8rem; line-height: 1.45; }
+
+.pri-banner {
+  display: flex; flex-direction: column; gap: 2px; margin-top: 14px; padding: 9px 12px;
+  border-radius: 8px; border-left: 6px solid var(--p-opt);
+  font-size: .84rem; line-height: 1.45; background: #f6f7f9;
+}
+.pri-banner strong { text-transform: uppercase; letter-spacing: .06em; font-size: .72rem; color: var(--gray); }
+.pri-banner.key { background: #e7edf4; border-left-color: var(--p-key); }
+.pri-banner.key strong { color: var(--p-key); }
+.pri-banner.important { background: #eef3f8; border-left-color: var(--p-imp); }
+.pri-banner.important strong { color: var(--p-imp); }
+
+.pri-key-list { margin-top: 14px; }
+.pri-key-list li { display: flex; gap: 10px; align-items: flex-start; }
+.pri-key-list .pri-tag { margin-top: 3px; flex: none; }
+.pri-key-list p { margin: 0; }

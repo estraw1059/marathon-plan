@@ -11,8 +11,9 @@ async function sha256(text) {
   return [...new Uint8Array(buf)].map(x => x.toString(16).padStart(2, '0')).join('')
 }
 
-export default function Gate({ children }) {
-  const [unlocked, setUnlocked] = useState(() => localStorage.getItem('mp-unlocked') === PASS_HASH)
+// Defaults preserve the original behaviour; other pages pass their own key/title so unlocks don't collide.
+export default function Gate({ children, storageKey = 'mp-unlocked', title = '🏃 Sub-3:15' }) {
+  const [unlocked, setUnlocked] = useState(() => localStorage.getItem(storageKey) === PASS_HASH)
   const [input, setInput] = useState('')
   const [error, setError] = useState(false)
 
@@ -21,7 +22,7 @@ export default function Gate({ children }) {
   const submit = async (e) => {
     e.preventDefault()
     if ((await sha256(input)) === PASS_HASH) {
-      localStorage.setItem('mp-unlocked', PASS_HASH)
+      localStorage.setItem(storageKey, PASS_HASH)
       setUnlocked(true)
     } else {
       setError(true)
@@ -32,7 +33,7 @@ export default function Gate({ children }) {
   return (
     <div className="gate">
       <form onSubmit={submit} className="gate-card">
-        <h1>🏃 Sub-3:15</h1>
+        <h1>{title}</h1>
         <p>Enter password</p>
         <input
           type="password"

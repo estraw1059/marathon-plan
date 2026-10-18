@@ -236,9 +236,9 @@ export const WEEKS = [
   ]},
   { n: 14, total: 38, label: 'ABSORB — rehearsal already done', days: [
     rest({ strength: 'A-light', detail: 'Rest + light Strength A. Rewritten Oct 18: you ran the dress rehearsal three days early and better than prescribed (21.1 mi with the last 6 at exactly 7:25). This week absorbs that instead of repeating it.' }),
-    easy(6, { detail: '6 miles easy, 9:00–9:45. No reps this week — a 21-miler with 6 at marathon pace is a bigger stimulus than any interval session, and it needs paying for.' }),
+    strides(6, 6, { detail: '6 miles easy (9:00–9:45), then 6 × 20 sec strides on flat ground with full walk-back recovery. This is the turnover you were after — it keeps the legs feeling fast without the fatigue cost of a rep session three days after a 21-miler with 6 at MP. Strides are nearly free; 800s three days post are not.' }),
     core(easy(5)),
-    mp(7, 4, { detail: 'Warm up 2 mi, 4 miles at marathon pace, 1 mi down. A touch of race rhythm to keep the feel, nothing more. If the legs are still heavy from Oct 17, cut it to 2 miles — no hero work from here.' }),
+    mp(7, 4, { detail: 'THIS is the week’s quality session. Warm up 2 mi, 4 miles at marathon pace, 1 mi down. If Thursday feels genuinely good, you may finish with 4 × 400m at interval pace — but only if the MP miles came easily. If the legs are still heavy from Oct 17, cut the MP block to 2 miles instead. No hero work from here.' }),
     easy(4),
     lng(12, 'Easy — the big one is banked', { detail: '12 miles entirely easy. Deliberately NOT another dress rehearsal: you already have 21.1 with 6 at MP in the bank from Oct 17, three weeks out, which is exactly where a peak long run belongs. Running another big one now adds fatigue and risk with no fitness upside.' }),
     rec(4),

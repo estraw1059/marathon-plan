@@ -6,7 +6,7 @@
   "planStart": "2026-07-20",
   "raceDate": "2026-11-07",
   "totalWeeks": 16,
-  "generatedAt": "2026-10-18T14:51:55.056Z",
+  "generatedAt": "2026-10-18T15:05:13.430Z",
   "revision": "2026-09-04 — long-run progression reworked (18/18 pre-Scotland, 18/20/20 in wks 11-13)",
   "paces": [
     {
@@ -1592,10 +1592,10 @@
         {
           "date": "2026-10-20",
           "dayOfWeek": "Tue",
-          "workout": "6 mi easy",
-          "type": "easy",
+          "workout": "6 mi easy + 6×strides",
+          "type": "quality",
           "miles": 6,
-          "detail": "6 miles easy, 9:00–9:45. No reps this week — a 21-miler with 6 at marathon pace is a bigger stimulus than any interval session, and it needs paying for.",
+          "detail": "6 miles easy (9:00–9:45), then 6 × 20 sec strides on flat ground with full walk-back recovery. This is the turnover you were after — it keeps the legs feeling fast without the fatigue cost of a rep session three days after a 21-miler with 6 at MP. Strides are nearly free; 800s three days post are not.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1623,7 +1623,7 @@
           "workout": "7 mi w/ 4 mi @ MP",
           "type": "quality",
           "miles": 7,
-          "detail": "Warm up 2 mi, 4 miles at marathon pace, 1 mi down. A touch of race rhythm to keep the feel, nothing more. If the legs are still heavy from Oct 17, cut it to 2 miles — no hero work from here.",
+          "detail": "THIS is the week’s quality session. Warm up 2 mi, 4 miles at marathon pace, 1 mi down. If Thursday feels genuinely good, you may finish with 4 × 400m at interval pace — but only if the MP miles came easily. If the legs are still heavy from Oct 17, cut the MP block to 2 miles instead. No hero work from here.",
           "strength": null,
           "core": false,
           "yoga": {

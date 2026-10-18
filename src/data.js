@@ -234,22 +234,22 @@ export const WEEKS = [
     lng(13, 'Easy — no MP work', { detail: 'Your return long run: 13 miles entirely at easy pace. No marathon-pace segment, no pushing. The job is to prove the leg handles two hours, not to build fitness you already have.' }),
     rec(4),
   ]},
-  { n: 14, total: '~41', label: 'LAST REAL WEEK', days: [
-    rest({ strength: 'A-light' }),
-    iv(6, '4 × 800m', { detail: 'Warm up 2 mi. 4 × 800m at interval pace with equal jog. Only if week 13 was clean. This is sharpening, not building — it should feel comfortable.' }),
+  { n: 14, total: 38, label: 'ABSORB — rehearsal already done', days: [
+    rest({ strength: 'A-light', detail: 'Rest + light Strength A. Rewritten Oct 18: you ran the dress rehearsal three days early and better than prescribed (21.1 mi with the last 6 at exactly 7:25). This week absorbs that instead of repeating it.' }),
+    easy(6, { detail: '6 miles easy, 9:00–9:45. No reps this week — a 21-miler with 6 at marathon pace is a bigger stimulus than any interval session, and it needs paying for.' }),
     core(easy(5)),
-    mp(7, 4, { detail: 'Warm up 2 mi. 4 miles at marathon pace (7:25). This is your confidence check — on Oct 1 you ran 5 at exactly this pace, so you know it is there.' }),
+    mp(7, 4, { detail: 'Warm up 2 mi, 4 miles at marathon pace, 1 mi down. A touch of race rhythm to keep the feel, nothing more. If the legs are still heavy from Oct 17, cut it to 2 miles — no hero work from here.' }),
     easy(4),
-    lng(15, 'Dress rehearsal: 6 @ MP', { detail: 'The last long run of the cycle, and the dress rehearsal. 15 miles with the middle 6 at marathon pace. Race kit, race shoes, race breakfast, race fueling. Treat it like Nov 7. Cut back from 16 w/ 8 @ MP to protect the leg.' }),
+    lng(12, 'Easy — the big one is banked', { detail: '12 miles entirely easy. Deliberately NOT another dress rehearsal: you already have 21.1 with 6 at MP in the bank from Oct 17, three weeks out, which is exactly where a peak long run belongs. Running another big one now adds fatigue and risk with no fitness upside.' }),
     rec(4),
   ]},
-  { n: 15, total: 32, label: 'TAPER', days: [
+  { n: 15, total: 27, label: 'TAPER', days: [
     rest({ strength: 'A-light', detail: 'Rest + final light Strength A (2 sets, moderate weight). Last strength session of the cycle.' }),
-    iv(5, '4 × 800m', { detail: 'Warm up 1.5 mi. 4 × 800m at interval pace, equal jog rest. Staying sharp, not building — this should feel easy.' }),
-    core(easy(5, { detail: '5 miles easy, light core circuit (2 sets max).' })),
-    mp(6, 3),
+    iv(5, '4 × 800m', { detail: 'Warm up 1.5 mi. 4 × 800m at interval pace, equal jog rest. Sharpening only — this should feel easy and leave you wanting more.' }),
+    core(easy(4, { detail: '4 miles easy, light core circuit (2 sets max).' })),
+    mp(5, 3),
     rest({ strength: null, yoga: Y[20], detail: 'Rest. Gentle 20 min yoga. Trust the taper — the hay is in the barn.' }),
-    lng(12, 'Relaxed', { detail: '12 miles relaxed. No MP work. Enjoy feeling fresh for the first time in months.' }),
+    lng(9, 'Relaxed', { detail: '9 miles relaxed, no MP work. You should finish feeling like you could have doubled it. That is the point.' }),
     rec(4),
   ]},
   { n: 16, total: '13 + RACE', label: 'RACE WEEK', days: [

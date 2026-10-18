@@ -99,7 +99,32 @@ The build peaked on **Oct 17 — 21.1 mi at 8:07/mi with the last 6 at exactly 7
 
 History worth knowing: a left knee/quad issue cost week 12 (Oct 5–11). Six days off resolved it. Week 13 was deliberately written down to ~33 mi with a 13-mile easy long run, and Eric ran 42.1 including the 21-miler — great outcome, risky route, and the same shape of decision that caused the injury. Strength has been absent since Sep 28 and core since Sep 10; both were in the plan specifically to support that knee.
 
-After Nov 7, this doc needs rewriting for whatever comes next.
+After Nov 7, this doc needs rewriting for whatever comes next — see the race calendar and Boston project below.
+
+## Race calendar and the Boston project
+
+Eric's stated long-term goal is a **Boston qualifier**. He is in the **men's 18–34** bracket: standard **2:55:00**, but the 2027 cutoff ran **5:17 under**, so the practical bar is **~2:50**. He has calibrated to that correctly.
+
+| Date | Race | How to treat it |
+|---|---|---|
+| Sat **Nov 7, 2026** | Indy Marathon | RACE. Goal 3:15, 7:25/mi from the gun |
+| Sun **Jan 17, 2027** | Chevron Houston Marathon | NOT a race. ~90% effort off a 3–4 day mini-taper, supported long run |
+| Sun **Mar 7, 2027** | Fun half with girlfriend | Social, ~2:30 (≈11:25/mi). Counts as that week's long run |
+| **Apr 7, 2027** | McKinney Half | RACE HARD. Main spring target (NB: Apr 7 2027 is a Wednesday — confirm the date) |
+
+**Agreed strategy (Oct 2026).** The honest assessment given: 3:15 → 2:50 is a 2–3 year project, not a one-year one. Projected arc is ~3:00–3:05 at a fall-2027 marathon, ~2:55 in 2028, ~2:50 in 2029. The limiting factor is **not** workout quality — his sessions are already good. It is **volume tolerance**: he peaked at 52–55 mpw this cycle and picked up a knee issue at 55, while sub-2:50 runners typically live at 70–90 mpw. The whole project reduces to getting to 70+ mpw and staying healthy there, which takes 12–18 months of patient building.
+
+Consequence: **do not let him race Houston.** Racing two marathons 10 weeks apart costs ~13 weeks of building (recovery + build + taper + recovery) for a result already predictable from Nov 7. Nov–Mar is the single best volume-building window of the year and must not be spent in race mode.
+
+**Phase structure for the post-Nov-7 block** (skeleton agreed; week-by-week detail deferred until the Nov 7 result is known):
+
+- **Phase 0 — Recovery · Nov 8–28 (3 wks).** Week 1 no running. Week 2 easy, 20–25 mi. Week 3 ~30 mi, reintroduce strides. Strength and core resume week 2 and become permanent.
+- **Phase 1 — Base into Houston · Nov 30 – Jan 17 (7 wks).** Build 35 → 50 mpw. One tempo per week, long run to 16. A volume build that happens to end in a marathon, not a marathon build. Houston at ~7:40–7:50/mi; a 3:20–3:30 is a SUCCESS, not a failure.
+- **Phase 2 — The volume block · Jan 18 – Mar 7 (7 wks).** 1–2 weeks easy post-Houston, then build 50 → 65 mpw. This is where Boston actually gets built. Mar 7 fun half slots in as that week's long run.
+- **Phase 3 — Half sharpening · Mar 8 – Apr 7 (4 wks).** Hold ~60 mpw, add threshold and 10K-pace work, 10-day taper. Target a hard half PR — at 60–65 mpw, 1:24–1:27 is realistic.
+- **Phase 4 — Spring/summer base · Apr–Aug 2027.** Build toward 70–75 mpw. Fall 2027 marathon is the first genuine BQ attempt.
+
+**Note on the Mar 7 fun half:** 2.5 hours at ~11:25/mi is a gait he is not adapted to, and slow shuffling for that long can cause its own niggles. Treat it as the week's long run, keep quality off the days either side, and tell him not to "make up" the pace afterward.
 
 ## Adding a second athlete
 

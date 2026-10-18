@@ -7,7 +7,12 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Gate storageKey={rachel.STORAGE.unlocked} title={rachel.GATE_TITLE}>
+    <Gate
+      storageKey={rachel.STORAGE.unlocked}
+      title={rachel.GATE_TITLE}
+      passHash={rachel.PASS_HASH}
+      normalize={rachel.normalizePassword}
+    >
       <PlanApp plan={rachel} />
     </Gate>
   </React.StrictMode>,

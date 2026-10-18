@@ -17,6 +17,12 @@ export const RACE_DATE = new Date(2027, 2, 7) // Sun Mar 7 2027
 // localStorage keys — namespaced so they never collide with Eric's `mp-done` / `mp-unlocked`.
 export const STORAGE = { done: 'mp-done-rachel', unlocked: 'mp-unlocked-rachel' }
 
+// Rachel's own password gate (separate from Eric's). Hash only — the plaintext is deliberately not stored.
+// The password is matched ignoring capitalization and leading/trailing spaces, so phone keyboards can't trip it up:
+// the hash below is of the password lowercased and trimmed.
+export const PASS_HASH = '1c5863cd55b5a4413fd59f054af57ba3c75c0698b3851d70f99b8de2d5c7338f'
+export const normalizePassword = (s) => s.trim().toLowerCase()
+
 export const TYPE_LABEL = {
   rest: 'Rest / yoga', easy: 'Run/walk', quality: 'Benchmark',
   long: 'Long run', bike: 'Peloton', race: 'RACE',

@@ -112,7 +112,13 @@ Eric's stated long-term goal is a **Boston qualifier**. He is in the **men's 18�
 | Sun **Mar 7, 2027** | Fun half with girlfriend | Social, ~2:30 (≈11:25/mi). Counts as that week's long run |
 | **Apr 7, 2027** | McKinney Half | RACE HARD. Main spring target (NB: Apr 7 2027 is a Wednesday — confirm the date) |
 
-**Agreed strategy (Oct 2026).** The honest assessment given: 3:15 → 2:50 is a 2–3 year project, not a one-year one. Projected arc is ~3:00–3:05 at a fall-2027 marathon, ~2:55 in 2028, ~2:50 in 2029. The limiting factor is **not** workout quality — his sessions are already good. It is **volume tolerance**: he peaked at 52–55 mpw this cycle and picked up a knee issue at 55, while sub-2:50 runners typically live at 70–90 mpw. The whole project reduces to getting to 70+ mpw and staying healthy there, which takes 12–18 months of patient building.
+**Agreed strategy (Oct 2026).** The honest assessment given: 3:15 → 2:50 is a 2–3 year project, not a one-year one. **Projected** arc — these are projections from current data, NOT targets, and the distinction matters to him: ~3:00–3:05 at a fall-2027 marathon, ~2:55 in 2028, ~2:50 in 2029. Race-day targets get chosen 3 months out from the actual workout data, never years ahead.
+
+Equivalences he should be held to (Riegel): 1:20 half → 2:47 marathon · 1:22 → 2:51 · 1:24 → 2:55 · 1:26 → 2:59. A 3:15 marathon ≡ a 1:33:30 half. He floated 1:20 for the Apr 2027 half; that is a 13:32 improvement in 22 weeks (62 sec/mi) when his sessions sit 32–54 sec/mi off 1:20 pace. **Realistic April target 1:24–1:28, stretch 1:23.**
+
+**The projection moves a full year earlier if** any of these land: Nov 7 comes in at 3:08 or better; he reaches 65 mpw by February without knee trouble; Feb–March threshold work lands at 6:30–6:40/mi. Re-run the projection when the data arrives rather than defending the old number.
+
+**Pacing principle to enforce:** attempt the time training supports, not the time wanted. Going out at 2:50 pace while 3:00-fit yields a blow-up and 3:15+, losing the qualifier he could have had. The limiting factor is **not** workout quality — his sessions are already good. It is **volume tolerance**: he peaked at 52–55 mpw this cycle and picked up a knee issue at 55, while sub-2:50 runners typically live at 70–90 mpw. The whole project reduces to getting to 70+ mpw and staying healthy there, which takes 12–18 months of patient building.
 
 Consequence: **do not let him race Houston.** Racing two marathons 10 weeks apart costs ~13 weeks of building (recovery + build + taper + recovery) for a result already predictable from Nov 7. Nov–Mar is the single best volume-building window of the year and must not be spent in race mode.
 

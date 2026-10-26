@@ -1,4 +1,4 @@
-import { RACE, CONFIDENCE, TARGETS, THE_PLAN, FUELING, CHECKLIST, MANTRAS } from './raceday.js'
+import { RACE, COURSE, CONFIDENCE, TARGETS, THE_PLAN, FUELING, CHECKLIST, MANTRAS } from './raceday.js'
 
 export default function RaceDay() {
   const days = Math.ceil((new Date(2026, 10, 7) - new Date()) / 86400000)
@@ -15,6 +15,19 @@ export default function RaceDay() {
             : days === 0 ? <strong>TODAY 🏁</strong> : <strong>Done 🎉</strong>}
         </div>
       </div>
+
+      <section>
+        <h2 className="nut-h2">{COURSE.title}</h2>
+        <div className="course-grid">
+          {COURSE.items.map(([t, b, tone]) => (
+            <div className={`course-card tone-${tone}`} key={t}>
+              <strong>{t}</strong>
+              <p>{b}</p>
+            </div>
+          ))}
+        </div>
+        <p className="recon-note">{COURSE.note}</p>
+      </section>
 
       <section>
         <h2 className="nut-h2">{CONFIDENCE.title}</h2>

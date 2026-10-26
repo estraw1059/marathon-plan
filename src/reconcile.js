@@ -2,7 +2,7 @@
 // Snapshot pulled from Strava on Sep 4, 2026 (weeks 1-7).
 // Paces are whole-run averages including warm-up / cool-down.
 
-export const SNAPSHOT = 'Pulled from Strava · Oct 18, 2026 — knee resolved, 21.1 mi with 6 @ MP banked'
+export const SNAPSHOT = 'Pulled from Strava · Oct 26, 2026 — week 14 lost to illness (sick Wed–Sun), 12 days to race'
 
 export const SCOREBOARD = [
   { n: 1, dates: 'Jul 20–26', plan: 36, actual: '36.1', delta: '+0.1',
@@ -44,16 +44,19 @@ export const SCOREBOARD = [
   { n: 13, dates: 'Oct 12–18', plan: '~33', actual: '42.1', delta: '+9.1',
     long: '13 easy → 21.1 mi @ 8:07, last 6 @ 7:25 ✓✓✓', quality: '3×1200 ✓ · Tue double 4.5 mi · the long run WAS the dress rehearsal',
     str: '0/1', core: '0/1', yoga: '2/7', status: 'good' },
+  { n: 14, dates: 'Oct 19–25', plan: 38, actual: '19.0', delta: '−19.0',
+    long: '12 easy → missed (ill)', quality: 'Tue 6 + strides ✓ · Thu 2×2 mi @ 6:50 ✓✓ then SICK Wed–Sun',
+    str: '1/1', core: '0/1', yoga: '0/7', status: 'bad' },
 ]
 
 export const SCOREBOARD_NOTE =
-  'Week 13 ran 9 miles OVER a plan that had deliberately been written down to ~33 — and the long run, prescribed as 13 easy with no ' +
-  'marathon-pace work, became 21.1 miles with the last 6 at exactly 7:25. Great outcome, risky route; see the read below. ' +
-  'Block total: 479 miles across 13 weeks.'
+  'Week 14 was cut in half by illness (sick Wed–Sun, now ~80% and on medication) — 19 of 38 miles, long run missed. ' +
+  'Before falling ill he ran 2 × 2 mi at 6:50 in 82°F, the fastest threshold work of the whole block. ' +
+  'Block total: 498 miles across 14 weeks. Taper week 15 has been rewritten around recovery.'
 
 export const COMPLETION = [
-  { label: 'Weekly mileage targets hit', value: '7 of 13', pct: 54 },
-  { label: 'Long runs completed', value: '12 of 12 — every single one', pct: 100 },
+  { label: 'Weekly mileage targets hit', value: '7 of 14', pct: 50 },
+  { label: 'Long runs completed', value: '13 of 14 — only the taper 12 missed', pct: 93 },
   { label: 'Peak long run', value: '21.1 mi w/ 6 @ MP, 3 weeks out', pct: 100 },
   { label: 'Intervals', value: '8 of 9', pct: 89 },
   { label: 'Tempo / MP volume', value: '~82% of prescribed miles', pct: 82 },
@@ -63,27 +66,27 @@ export const COMPLETION = [
 ]
 
 export const SINCE_LAST = {
-  title: 'Since the last check (Oct 9–18) — the knee resolved and the big one landed',
+  title: 'Since the last check (Oct 19–26) — illness took the week',
   wins: [
-    ['Sat Oct 17 — 21.1 mi, last 6 at exactly 7:25', 'The best run of the entire block and the one that matters most. 21.10 miles in 2:51:11 at 8:07/mi. First 13 averaged 8:30 easy, then miles 16–21 came in at 7:33, 7:20, 7:28, 7:23, 7:24, 7:23 — an average of 7:25, dead on goal marathon pace, at mile 21 of a long run.'],
-    ['Heart rate FELL through the marathon-pace block', 'Entering the MP miles your HR hit 168, then settled: 165, 157, 158, 159, 158 — dropping while pace held at 7:2x. That is the signature of an athlete settling into a rhythm that is comfortably within their fitness, not hanging on. Max 178, but the work was done around 158.'],
-    ['Half-marathon split of 1:58:25', 'A new best inside a long run — ahead of Oct 3 (1:59:32) and Edinburgh (2:02:36). And this one had 21 miles stacked on top of it.'],
-    ['The knee held', 'Six days fully off, a 3 mi test on Oct 11, then a full week including the 21 — with no reported issue. That is the outcome you wanted from the rest week.'],
+    ['Thu Oct 22 — 2 × 2 mi at 6:50, in 82°F', 'The fastest threshold work of the entire block — 22 sec/mi quicker than the 7:12 five-miler in September — and you ran it in 82-degree heat on the day you were coming down with something. Heat-adjusted that is roughly 6:34.'],
+    ['Tue Oct 20 — 6 easy + strides, exactly as written', 'In 53°F. Clean execution of the session we swapped in for reps.'],
+    ['Mon Oct 19 — strength is back', 'First Monday session since Sep 28, after a three-week gap.'],
+    ['You rested when ill instead of pushing', 'Walks on Wed and Thu, a gentle walk-run Sunday. A year ago that might have been four forced bad runs. This is the right instinct.'],
   ],
   misses: [
-    ['Strength: zero since Sep 28', 'Three weeks with no Monday session, after a 10-of-11 streak. The split squat and side plank were folded into Monday specifically to support the knee.'],
-    ['Core: zero since Sep 10', 'Five and a half weeks.'],
-    ['Yoga: 2 of 7 in week 13', 'Better than Scotland, still well below the habit that held through August.'],
+    ['Sick Wed–Sun', '19 of 38 miles. The 12-mile taper long run gone entirely.'],
+    ['The Oct 22 tempo was run while getting sick', 'Great session, questionable timing — you had already woken up ill the day before. Something to notice, not to beat yourself up over.'],
+    ['Yoga: 0 of 7 again', 'Fourth week out of five near zero.'],
   ],
 }
 
 export const FATIGUE = {
-  title: 'The read: you are ready — and you got there by a route worth naming',
+  title: 'You are not less fit than you were. You are less rested than you will be.',
   body: [
-    'First the verdict, because it is unambiguous. Six miles at exactly 7:25 at the end of a 21-miler, with heart rate falling from 168 to 158 while the pace held, is the single strongest marathon-readiness signal available short of a race. Three weeks out is also exactly where a peak long run belongs. Sub-3:15 is no longer a stretch goal — on this evidence it is the realistic target, and the 7:35–7:40 plan B from Oct 8 can be retired.',
-    'Now the part worth saying plainly. Week 13 was deliberately written down to ~33 miles with a 13-mile EASY long run and no marathon-pace work, because you were seven days off a knee problem. You ran 42.1 miles and a 21-miler with an MP block. That is the same pattern that produced the injury in the first place: a down period, a big jump, and legs that felt good enough to take it. It worked this time. It worked spectacularly. But the process was a gamble, not a plan, and you have one more chance to get the run-in wrong.',
-    'The flip side is that strength has been absent since Sep 28 and core since Sep 10 — the exact work that was added to Monday to protect this knee. The leg is holding, but it is holding without its support structure.',
-    'So the job for the next three weeks is simple and boring: absorb Oct 17, do not chase another big one, and arrive on Nov 7 fresh. The fitness question is answered. The only remaining question is whether you get to the start line intact.',
+    'You said you feel lost about your fitness, so here is the arithmetic rather than reassurance. Measurable detraining takes roughly two weeks of doing nothing. You lost five days, and they landed in a TAPER week — the cheapest week in the entire sixteen, the one whose only job is to make you fresh. Losing it costs you almost nothing physically. What it cost you is the feeling of being ready, which is a different thing and not one the race cares about.',
+    'What has actually happened in the last three weeks: Oct 17, 21.1 miles with the final six at exactly 7:25 and heart rate FALLING from 168 to 158 across them. Oct 22, two by two miles at 6:50 in 82-degree heat, your quickest threshold work of the cycle. Those are not the numbers of a man whose fitness has gone anywhere.',
+    'The honest risk now is not that you are undertrained. It is that you arrive anxious and either run the first six miles too fast to prove something to yourself, or run them too slow because you have talked yourself out of it. Both cost more than the illness did.',
+    'So the plan for the next twelve days is: get fully well, run the easy miles easy, touch marathon pace once on Thursday if you are clear of it, and go to the line with a pacing plan that does not require you to guess how fit you are. That last part is what the Race Day tab is for.',
   ],
 }
 
@@ -130,7 +133,7 @@ export const ACTIONS = [
     body: 'Nine weeks, nine skips. Strength B is gone. Its two worthwhile movements moved to Monday: the split squat now rotates with the reverse lunge week to week, and a side plank joins the plank as a second finisher. Monday grows from 30 to 35 minutes; Fridays are easy run plus yoga, nothing else. The plan now matches what you actually do.' },
   { n: 4, title: 'Knee + rest week — CLOSED, it worked', done: true,
     body: 'Six days off, a 3 mi test, then a full week capped by 21.1 miles with no reported issue. Exactly the outcome the reset was for.' },
-  { n: 5, title: 'The training is DONE — stop adding',
+  { n: 5, title: 'The training is DONE — stop adding', done: true,
     body: 'You have 21.1 with 6 at MP banked three weeks out. There is no run between now and Nov 7 that makes you fitter; gains take 10–14 days to express and that window is shut. Every remaining session exists to keep you sharp and get you to the line healthy. Week 14 is deliberately 38 miles with a 12-mile easy long run — do not upgrade it.' },
   { n: 6, title: 'Put strength and core back, this week',
     body: 'Zero strength since Sep 28, zero core since Sep 10. The split squat and side plank went into Monday specifically to protect this knee, and the knee has just been through something. Two sessions a week for three weeks is cheap insurance on a race you have already earned.' },

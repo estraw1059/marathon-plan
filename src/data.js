@@ -243,13 +243,13 @@ export const WEEKS = [
     lng(12, 'Easy — the big one is banked', { detail: '12 miles entirely easy. Deliberately NOT another dress rehearsal: you already have 21.1 with 6 at MP in the bank from Oct 17, three weeks out, which is exactly where a peak long run belongs. Running another big one now adds fatigue and risk with no fitness upside.' }),
     rec(4),
   ]},
-  { n: 15, total: 27, label: 'TAPER', days: [
-    rest({ strength: 'A-light', detail: 'Rest + final light Strength A (2 sets, moderate weight). Last strength session of the cycle.' }),
-    iv(5, '4 × 800m', { detail: 'Warm up 1.5 mi. 4 × 800m at interval pace, equal jog rest. Sharpening only — this should feel easy and leave you wanting more.' }),
-    core(easy(4, { detail: '4 miles easy, light core circuit (2 sets max).' })),
-    mp(5, 3),
-    rest({ strength: null, yoga: Y[20], detail: 'Rest. Gentle 20 min yoga. Trust the taper — the hay is in the barn.' }),
-    lng(9, 'Relaxed', { detail: '9 miles relaxed, no MP work. You should finish feeling like you could have doubled it. That is the point.' }),
+  { n: 15, total: 27, label: 'TAPER — post-illness', days: [
+    rest({ strength: null, yoga: Y[15], detail: 'Rewritten Oct 26. You were sick Wed–Sun and are about 80%. No strength today, no running. Gentle yoga, hydrate, sleep. Getting fully well is this week’s only real job.' }),
+    easy(4, { detail: '4 miles VERY easy — 9:45–10:15, slower than feels natural. This is a lung test, not a workout. If your breathing feels tight or your HR runs 10+ bpm above normal for the pace, stop and walk home. Illness HR is the honest signal; legs will lie to you.' }),
+    core(easy(5, { detail: '5 miles easy, 9:15–9:45. Light core only — 2 sets, skip anything that strains. Should feel noticeably better than Tuesday.' })),
+    mp(5, 3, { detail: 'ONLY if Tuesday and Wednesday felt normal. Warm up 1.5 mi, 3 miles at marathon pace (7:25–7:35), 0.5 down. This is the confidence session — you need to feel race pace in your legs once more before Nov 7. If you are still coughing or your HR is elevated, replace it with 5 easy. Skipping this costs you nothing physically; running it sick costs you the race.' }),
+    rest({ strength: null, yoga: Y[20], run: 'REST', detail: 'Full rest. Gentle yoga. Nine days out.' }),
+    lng(9, 'Relaxed — final long run', { detail: '9 miles relaxed, no MP work. The last long run of the cycle. You should finish feeling like you could have doubled it. That is exactly the point — the fitness is built, this is just keeping the machinery turning.' }),
     rec(4),
   ]},
   { n: 16, total: '13 + RACE', label: 'RACE WEEK', days: [
@@ -258,7 +258,7 @@ export const WEEKS = [
     core(easy(4, { detail: '4 miles easy, 10 min light core (planks only). Last core work.' })),
     mp(4, 2, { detail: 'Warm up, 2 miles at marathon pace to lock in rhythm, done. Short and confident.' }),
     rest({ strength: null, yoga: Y[10], run: 'REST — carb load', detail: 'Rest. Carb load: 8–10 g/kg today and tomorrow morning. 10 min gentle yoga, early night, lay out kit.' }),
-    { run: 'RACE DAY — 26.2', sub: '7:25/mi → 3:14:xx', type: 'race', miles: 26.2, detail: 'Warm-up: 5–10 min jog + strides. Start 7:28–7:30/mi, settle into 7:25. Halfway 1:37:0x–1:37:30. Fuel every 30–35 min from mile 5, drink early and often. Miles 20–26 are what the 20-milers were for. Nothing new today. You’ve run a 1:30 half — it’s in you. GO.' },
+    { run: 'RACE DAY — 26.2', sub: 'Start 7:30 · decide at mile 16', type: 'race', miles: 26.2, detail: 'THE PLAN (set Oct 26, see the Race Day tab for full splits): Warm up 5–10 min jog + 4 strides. Miles 1–2 at 7:35–7:40 to let the crowd thin and your HR settle — do NOT chase anyone. Miles 3–16 at 7:30, which is 3:16:30 pace. At MILE 16 make one decision: if your breathing is easy and your legs are willing, run the last 10 at 7:20–7:25 and you finish 3:15–3:16. If anything is grinding, hold 7:30–7:38 and you still finish 3:17–3:20. Both outcomes are a 20+ minute PR. Fuel every 30–35 min from mile 5, drink at every station early. Nothing new today. On Oct 17 you ran six miles at 7:25 at mile 21 of a 21-miler with your heart rate FALLING. That man can do this. GO.' },
     { run: 'Celebrate', type: 'easy', yoga: Y[20], detail: 'Walk, eat everything, 20 min gentle stretch if you feel like it. Congratulations, marathoner.' },
   ]},
 ]

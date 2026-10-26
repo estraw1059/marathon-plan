@@ -5,6 +5,7 @@ import {
 } from './data.js'
 import Nutrition from './Nutrition.jsx'
 import Reconcile from './Reconcile.jsx'
+import RaceDay from './RaceDay.jsx'
 
 const TYPE_CLASS = { rest: 'rest', easy: 'easy', quality: 'quality', long: 'long', race: 'race' }
 const TYPE_LABEL = { rest: 'Rest', easy: 'Easy', quality: 'Quality', long: 'Long run', race: 'RACE' }
@@ -144,7 +145,7 @@ function InfoModal({ title, children, onClose }) {
 export default function App() {
   const [sel, setSel] = useState(null)
   const [info, setInfo] = useState(null) // 'paces' | 'strength'
-  const [tab, setTab] = useState('plan') // 'plan' | 'nutrition' | 'reconcile'
+  const [tab, setTab] = useState('plan') // 'plan' | 'nutrition' | 'reconcile' | 'raceday'
   const [done, toggle] = useDone()
   const today = new Date()
 
@@ -181,10 +182,12 @@ export default function App() {
         <button className={tab === 'plan' ? 'active' : ''} onClick={() => setTab('plan')}>📅 Training Plan</button>
         <button className={tab === 'nutrition' ? 'active' : ''} onClick={() => setTab('nutrition')}>🍝 Nutrition</button>
         <button className={tab === 'reconcile' ? 'active' : ''} onClick={() => setTab('reconcile')}>📊 Reconcile</button>
+        <button className={tab === 'raceday' ? 'active' : ''} onClick={() => setTab('raceday')}>🏁 Race Day</button>
       </nav>
 
       {tab === 'nutrition' && <Nutrition />}
       {tab === 'reconcile' && <Reconcile />}
+      {tab === 'raceday' && <RaceDay />}
 
       {tab === 'plan' && <>
       <nav className="toolbar">

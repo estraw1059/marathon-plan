@@ -6,7 +6,7 @@
   "planStart": "2026-07-20",
   "raceDate": "2026-11-07",
   "totalWeeks": 16,
-  "generatedAt": "2026-10-18T15:05:13.430Z",
+  "generatedAt": "2026-10-26T21:32:12.593Z",
   "revision": "2026-09-04 — long-run progression reworked (18/18 pre-Scotland, 18/20/20 in wks 11-13)",
   "paces": [
     {
@@ -1681,7 +1681,7 @@
       "startDate": "2026-10-26",
       "endDate": "2026-11-01",
       "plannedMiles": 27,
-      "label": "TAPER",
+      "label": "TAPER — post-illness",
       "scotland": false,
       "days": [
         {
@@ -1689,8 +1689,8 @@
           "dayOfWeek": "Mon",
           "workout": "REST",
           "type": "rest",
-          "detail": "Rest + final light Strength A (2 sets, moderate weight). Last strength session of the cycle.",
-          "strength": "A-light",
+          "detail": "Rewritten Oct 26. You were sick Wed–Sun and are about 80%. No strength today, no running. Gentle yoga, hydrate, sleep. Getting fully well is this week’s only real job.",
+          "strength": null,
           "core": false,
           "yoga": {
             "minutes": 15,
@@ -1700,10 +1700,10 @@
         {
           "date": "2026-10-27",
           "dayOfWeek": "Tue",
-          "workout": "5 mi w/ 4 × 800m @ IV",
-          "type": "quality",
-          "miles": 5,
-          "detail": "Warm up 1.5 mi. 4 × 800m at interval pace, equal jog rest. Sharpening only — this should feel easy and leave you wanting more.",
+          "workout": "4 mi easy",
+          "type": "easy",
+          "miles": 4,
+          "detail": "4 miles VERY easy — 9:45–10:15, slower than feels natural. This is a lung test, not a workout. If your breathing feels tight or your HR runs 10+ bpm above normal for the pace, stop and walk home. Illness HR is the honest signal; legs will lie to you.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1714,10 +1714,10 @@
         {
           "date": "2026-10-28",
           "dayOfWeek": "Wed",
-          "workout": "4 mi easy",
+          "workout": "5 mi easy",
           "type": "easy",
-          "miles": 4,
-          "detail": "4 miles easy, light core circuit (2 sets max).",
+          "miles": 5,
+          "detail": "5 miles easy, 9:15–9:45. Light core only — 2 sets, skip anything that strains. Should feel noticeably better than Tuesday.",
           "strength": null,
           "core": true,
           "yoga": {
@@ -1731,7 +1731,7 @@
           "workout": "5 mi w/ 3 mi @ MP",
           "type": "quality",
           "miles": 5,
-          "detail": "Warm up 2 mi easy. 3 continuous miles at marathon pace (7:25/mi) — lock in the rhythm, practice relaxed form. Cool down to 5 total.",
+          "detail": "ONLY if Tuesday and Wednesday felt normal. Warm up 1.5 mi, 3 miles at marathon pace (7:25–7:35), 0.5 down. This is the confidence session — you need to feel race pace in your legs once more before Nov 7. If you are still coughing or your HR is elevated, replace it with 5 easy. Skipping this costs you nothing physically; running it sick costs you the race.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1744,7 +1744,7 @@
           "dayOfWeek": "Fri",
           "workout": "REST",
           "type": "rest",
-          "detail": "Rest. Gentle 20 min yoga. Trust the taper — the hay is in the barn.",
+          "detail": "Full rest. Gentle yoga. Nine days out.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1757,9 +1757,9 @@
           "dayOfWeek": "Sat",
           "workout": "LONG 9 mi",
           "type": "long",
-          "note": "Relaxed",
+          "note": "Relaxed — final long run",
           "miles": 9,
-          "detail": "9 miles relaxed, no MP work. You should finish feeling like you could have doubled it. That is the point.",
+          "detail": "9 miles relaxed, no MP work. The last long run of the cycle. You should finish feeling like you could have doubled it. That is exactly the point — the fitness is built, this is just keeping the machinery turning.",
           "strength": null,
           "core": false,
           "yoga": {
@@ -1864,9 +1864,9 @@
           "dayOfWeek": "Sat",
           "workout": "RACE DAY — 26.2",
           "type": "race",
-          "note": "7:25/mi → 3:14:xx",
+          "note": "Start 7:30 · decide at mile 16",
           "miles": 26.2,
-          "detail": "Warm-up: 5–10 min jog + strides. Start 7:28–7:30/mi, settle into 7:25. Halfway 1:37:0x–1:37:30. Fuel every 30–35 min from mile 5, drink early and often. Miles 20–26 are what the 20-milers were for. Nothing new today. You’ve run a 1:30 half — it’s in you. GO.",
+          "detail": "THE PLAN (set Oct 26, see the Race Day tab for full splits): Warm up 5–10 min jog + 4 strides. Miles 1–2 at 7:35–7:40 to let the crowd thin and your HR settle — do NOT chase anyone. Miles 3–16 at 7:30, which is 3:16:30 pace. At MILE 16 make one decision: if your breathing is easy and your legs are willing, run the last 10 at 7:20–7:25 and you finish 3:15–3:16. If anything is grinding, hold 7:30–7:38 and you still finish 3:17–3:20. Both outcomes are a 20+ minute PR. Fuel every 30–35 min from mile 5, drink at every station early. Nothing new today. On Oct 17 you ran six miles at 7:25 at mile 21 of a 21-miler with your heart rate FALLING. That man can do this. GO.",
           "strength": null,
           "core": false,
           "yoga": null

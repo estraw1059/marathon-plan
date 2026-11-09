@@ -135,7 +135,16 @@ Eric's stated long-term goal is a **Boston qualifier**. He is in the **men's 18�
 
 Equivalences he should be held to (Riegel): 1:20 half → 2:47 marathon · 1:22 → 2:51 · 1:24 → 2:55 · 1:26 → 2:59. A 3:15 marathon ≡ a 1:33:30 half. He floated 1:20 for the Apr 2027 half; that is a 13:32 improvement in 22 weeks (62 sec/mi) when his sessions sit 32–54 sec/mi off 1:20 pace. **Realistic April target 1:24–1:28, stretch 1:23.**
 
-**On "is the next marathon a BQ attempt?"** — he asked this in Nov 2026 and it is worth being crisp. Men 18–34 need 2:55 nominal / **~2:50 effective**. A fall-2027 marathon projects at 3:02–3:08, which is a large PR and NOT a qualifier. Fall 2027 is the stepping stone, not the attempt. Current honest arc: fall 2027 ~3:02–3:08 · 2028 ~2:55–2:58 · 2029 ~2:48–2:53 (first genuine BQ window). Note the age bracket matters — if he ages into 35–39 the standard moves to 3:00 nominal / ~2:55 effective, which could pull the timeline in by a year or more. Confirm his actual age before projecting far out.
+**REVISED Nov 2026 after he pushed back — the earlier projection was too conservative.** He is 30 (born ~May 1996). The reasoning that changed it:
+
+- The next jump is SMALLER than the one he just made: 3:40 → 3:17 fitness was 23 min in ~14 months; 3:17 → sub-3:00 is 17 min. The generic "8–12 min a year" rule describes runners whose volume is already maxed. His never has been, and the 23 min came off a block that lost a week to a knee, a week to illness, and had two weeks of travel.
+- **His profile is endurance-limited, not speed-limited** — the most volume-responsive kind. Gaps to sub-3 standard: 800m reps ~20 s/mi, threshold ~20 s/mi, but 5-mile tempo ~37 s/mi and marathon pace ~33 s/mi. Top end is nearly there; the aerobic base under it is not.
+
+**Current arc:** fall 2027 target **sub-3:00** (base case 3:02–3:06, sub-3 roughly 35–40% given a clean year) · fall 2028 2:52–2:57 · 2029 ~2:50 → BQ, apply Sept 2030, **Boston April 2031**.
+
+**Age bracket does NOT help him soon** — a correction to an earlier note. Boston 2028–2031 he is 31–34, still 18–34 (2:55 nominal / ~2:50 effective). The 35–39 bracket only arrives for Boston 2032. Plan on 2:55/2:50.
+
+**The whole chain, and the thing to keep saying:** sub-3 is downstream of 65–70 mpw, and 70 mpw is downstream of the left leg. He has never trained above 55 and got a knee issue at 55. The gait assessment and ankle/hip screen are not a nice-to-have — they are the gate on the entire goal.
 
 **The projection moves a full year earlier if** any of these land: Nov 7 comes in at 3:08 or better; he reaches 65 mpw by February without knee trouble; Feb–March threshold work lands at 6:30–6:40/mi. Re-run the projection when the data arrives rather than defending the old number.
 

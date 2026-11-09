@@ -74,8 +74,9 @@ node -e "import('./src/data.js').then(({WEEKS})=>WEEKS.forEach(w=>{
 2. **Claude can commit but cannot push.** GitHub credentials live in the macOS keychain, unreachable from the sandbox. Workflow: make changes -> verify -> commit -> tell Eric to run `git push`.
 3. **Stale `.git/index.lock`.** A sandbox `git status` sometimes leaves one behind and can't delete it. If git complains, `rm -f .git/index.lock` after enabling file deletion for the folder.
 4. **Host writes can fail with EPERM.** The Write/Edit tools occasionally lose access to `/Users/ericstraw/Desktop/PersonalProjects`. Re-request the directory; if that still fails, write through the bash mount at `/sessions/<session>/mnt/PersonalProjects/` instead.
-5. **`npm run build` runs `export:json` first**, so `plan.json` can never drift from `data.js`. Don't hand-edit `plan.json`.
-6. Only three CDN libraries are safe to add (Chart.js, Grid.js, Mermaid) — otherwise inline everything.
+5. **`reconcile.js` export order bites.** `PLAN_CHANGES` sits AFTER `BOTTOM_LINE` at the end of the file. Rewriting `BOTTOM_LINE` by slicing `s[:s.index('export const BOTTOM_LINE')] + new` silently truncates `PLAN_CHANGES` and the build fails with "PLAN_CHANGES is not exported". This has happened twice. Always verify every export after editing: `node -e "import('./src/reconcile.js').then(m=>console.log(Object.keys(m)))"`.
+6. **`npm run build` runs `export:json` first**, so `plan.json` can never drift from `data.js`. Don't hand-edit `plan.json`.
+7. Only three CDN libraries are safe to add (Chart.js, Grid.js, Mermaid) — otherwise inline everything.
 
 ## Reconciles
 

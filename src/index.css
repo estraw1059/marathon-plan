@@ -505,3 +505,40 @@ footer {
 .course-card.tone-warn { background: var(--quality); border-color: var(--quality-b); }
 .course-card strong { display: block; color: var(--navy); font-size: .9rem; margin-bottom: 4px; }
 .course-card p { margin: 0; font-size: .84rem; line-height: 1.55; }
+
+.result-hero {
+  display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;
+  background: linear-gradient(135deg, var(--navy), #2d5f8a); color: #fff;
+  border-radius: 14px; padding: 22px 26px; margin: 12px 0 6px;
+}
+.result-label { font-size: .78rem; opacity: .82; text-transform: uppercase; letter-spacing: .06em; }
+.result-main strong { display: block; font-size: 2.8rem; line-height: 1.05; margin: 4px 0; }
+.result-pr { font-size: .9rem; font-weight: 700; color: #9ad4a4; }
+.result-quote { margin: 8px 0 0; font-size: .85rem; font-style: italic; opacity: .9; }
+.result-stats { display: flex; gap: 22px; }
+.result-stats div { text-align: center; }
+.result-stats em { display: block; font-style: normal; font-weight: 800; font-size: 1.25rem; }
+.result-stats span { font-size: .7rem; opacity: .8; text-transform: uppercase; letter-spacing: .04em; }
+
+.pr-strip { display: flex; gap: 10px; flex-wrap: wrap; }
+.pr-chip {
+  background: var(--long); border: 1px solid var(--long-b); border-radius: 10px;
+  padding: 9px 16px; text-align: center; flex: 1 1 110px;
+}
+.pr-chip em { display: block; font-style: normal; font-weight: 800; color: var(--navy); font-size: 1.05rem; }
+.pr-chip span { font-size: .72rem; color: var(--gray); text-transform: uppercase; letter-spacing: .04em; }
+
+.splits-grid { display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; }
+@media (max-width: 900px) { .splits-grid { grid-template-columns: repeat(7, 1fr); } }
+@media (max-width: 560px) { .splits-grid { grid-template-columns: repeat(5, 1fr); } }
+.split-cell {
+  border-radius: 6px; padding: 6px 2px; text-align: center; border: 1px solid var(--border);
+  background: var(--light);
+}
+.split-cell.hot { background: var(--quality); border-color: var(--quality-b); }
+.split-cell.fade { background: var(--race); border-color: var(--race-b); }
+.split-mi { display: block; font-size: .6rem; color: var(--gray); font-weight: 700; }
+.split-cell strong { display: block; font-size: .76rem; color: var(--navy); }
+.split-hr { display: block; font-size: .62rem; color: var(--gray); }
+.cf-actual { border-top: 1px solid var(--border); margin-top: 4px; padding-top: 7px !important; }
+.cf-actual em { color: #a32020 !important; }

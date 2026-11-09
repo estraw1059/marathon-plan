@@ -2,7 +2,44 @@
 // Snapshot pulled from Strava on Sep 4, 2026 (weeks 1-7).
 // Paces are whole-run averages including warm-up / cool-down.
 
-export const SNAPSHOT = 'Pulled from Strava · Oct 26, 2026 — week 14 lost to illness (sick Wed–Sun), 12 days to race'
+export const SNAPSHOT = 'Pulled from Strava · Nov 9, 2026 — RACE COMPLETE. Indianapolis Monumental, 3:22:45.'
+
+export const RACE_RESULT = {
+  time: '3:22:45',
+  pr: '17-minute PR',
+  prev: 'Previous best 3:40 (2025)',
+  conditions: '34°F at the gun, clear, light wind — 9 degrees colder than forecast',
+  halves: ['1:35:44', '1:48:31'],
+  split: '+12:47 positive split',
+  hr: 'Avg 164 · Max 191',
+  quote: '“Shout out to my support crew! Had so much fun.”',
+  splits: [
+    [1,'7:48',147],[2,'7:37',157],[3,'7:13',158],[4,'7:25',156],[5,'7:20',162],
+    [6,'7:21',158],[7,'7:19',157],[8,'7:25',157],[9,'7:23',158],[10,'7:17',157],
+    [11,'7:17',169],[12,'7:14',178],[13,'7:16',182],[14,'7:20',177],[15,'7:21',176],
+    [16,'7:23',181],[17,'7:31',176],[18,'7:33',177],[19,'7:29',177],[20,'7:42',173],
+    [21,'8:19',161],[22,'8:14',159],[23,'8:36',158],[24,'8:54',156],[25,'9:08',154],[26,'9:26',152],
+  ],
+  prs: [['10K','45:17'],['10 mile','1:12:59'],['Half','1:35:44'],['30K','2:17:36'],['Marathon','3:22:45']],
+}
+
+export const RACE_READ = {
+  title: 'What happened — and why it is the most useful race you could have run',
+  body: [
+    'First, the thing that matters: you ran 3:22:45. That is a seventeen-minute personal best, on a day you describe as fun, with your crew there. Thirteen PRs in one morning — 10K, 10 mile, half, 30K and the marathon itself. Whatever follows, start there.',
+    'Now the diagnosis, because the data is unusually clean and it is worth more to you than the medal. The plan was 7:38 for three miles, then 7:30 through fifteen. You ran mile 3 in 7:13 and then sat at 7:14–7:25 for ten straight miles. Halfway came in 1:35:44 — that is 3:11:28 pace, nearly three minutes ahead of a plan you had agreed was already the ambitious option.',
+    'Your heart rate called it before your legs did. Miles 1–10 sat at 147–162, exactly where it should be. Then mile 11: 169. Mile 12: 178. Mile 13: 182 — and it stayed between 173 and 182 for the next seven miles. On Oct 17 you held 7:25 at 158. At the same pace on race day you were running 20 beats higher. That gap is the whole race.',
+    'The wall arrived at mile 21, and the shape of it is diagnostic: your splits went 8:19, 8:14, 8:36, 8:54, 9:08, 9:26 while your heart rate FELL to 152–161. A fade with falling HR is not a cardiovascular limit — your heart had plenty left. It is glycogen and muscular failure. You spent the fuel in the first half and the last six miles were run on an empty tank.',
+    'One genuine mitigating factor: it was 34°F at the gun, nine degrees colder than the forecast you planned around. Cold starts make early pace feel effortless — the body wants to warm up and the watch reads fast for free. Almost everyone goes out hot in those conditions. It explains the first three miles. It does not explain miles 10 through 16, by which point you were warm and the HR was already telling you.',
+  ],
+  counterfactual: [
+    ['Run the plan: 7:30 to mile 20, 7:35 after', '3:17:10'],
+    ['Run the plan with a mild fade to 7:50', '3:18:43'],
+    ['Run the plan with a bad fade to 8:10', '3:20:47'],
+    ['What actually happened', '3:22:45'],
+  ],
+  closing: 'Every version of running the plan beats what you ran — including the version where the back half goes badly. You did not lack fitness on Nov 7; the first twenty miles prove that beyond argument. You lacked three minutes of patience in the first half. That is the single most common mistake in marathoning and now you have your own heart-rate trace of it, which is worth more than reading about it a hundred times.',
+}
 
 export const SCOREBOARD = [
   { n: 1, dates: 'Jul 20–26', plan: 36, actual: '36.1', delta: '+0.1',
@@ -47,12 +84,18 @@ export const SCOREBOARD = [
   { n: 14, dates: 'Oct 19–25', plan: 38, actual: '19.0', delta: '−19.0',
     long: '12 easy → missed (ill)', quality: 'Tue 6 + strides ✓ · Thu 2×2 mi @ 6:50 ✓✓ then SICK Wed–Sun',
     str: '1/1', core: '0/1', yoga: '0/7', status: 'bad' },
+  { n: 15, dates: 'Oct 26–Nov 1', plan: 27, actual: '33.3', delta: '+6.3',
+    long: '9 → 10.0 mi @ 8:44 ✓', quality: 'Thu MP session SKIPPED (social run instead) · recovered well from illness',
+    str: '1/1', core: '0/1', yoga: '1/7', status: 'warn' },
+  { n: 16, dates: 'Nov 2–8', plan: '13 + RACE', actual: '8.1 + 26.2', delta: 'RACE',
+    long: 'INDY MONUMENTAL — 3:22:45 🏁', quality: 'Taper clean · 17-min PR · 13 PRs on the day',
+    str: '0/1', core: '0/1', yoga: '2/7', status: 'good' },
 ]
 
 export const SCOREBOARD_NOTE =
-  'Week 14 was cut in half by illness (sick Wed–Sun, now ~80% and on medication) — 19 of 38 miles, long run missed. ' +
-  'Before falling ill he ran 2 × 2 mi at 6:50 in 82°F, the fastest threshold work of the whole block. ' +
-  'Block total: 498 miles across 14 weeks. Taper week 15 has been rewritten around recovery.'
+  'BLOCK COMPLETE. 566 miles across 16 weeks, 14 of 15 long runs, finishing with a 17-minute marathon PR. ' +
+  'Week 15 ran over target as the illness cleared; the Thursday marathon-pace touch was the one taper session missed. ' +
+  'Race-week taper was clean.'
 
 export const COMPLETION = [
   { label: 'Weekly mileage targets hit', value: '7 of 14', pct: 50 },
@@ -125,51 +168,44 @@ export const HEAT = {
 }
 
 export const ACTIONS = [
-  { n: 1, title: 'Tempo volume — CLOSED, now keep it', done: true,
-    body: 'Sep 9 was the fix: five continuous miles at 7:12. That was the single biggest gap in the block and you closed it. Week 11 onward, keep protecting it — if a session has to shrink, cut the warm-up, never the tempo miles.' },
-  { n: 2, title: 'Scotland recovery — CLOSED, and it worked', done: true,
-    body: 'You ran it exactly right: under target on volume, both long runs protected, quality kept alive, two big hikes. You came home with the lowest long-run heart rate of the entire block. This is the reason weeks 11–13 can now be pushed.' },
-  { n: 3, title: 'Friday strength — CLOSED, retired Sep 12', done: true,
-    body: 'Nine weeks, nine skips. Strength B is gone. Its two worthwhile movements moved to Monday: the split squat now rotates with the reverse lunge week to week, and a side plank joins the plank as a second finisher. Monday grows from 30 to 35 minutes; Fridays are easy run plus yoga, nothing else. The plan now matches what you actually do.' },
-  { n: 4, title: 'Knee + rest week — CLOSED, it worked', done: true,
-    body: 'Six days off, a 3 mi test, then a full week capped by 21.1 miles with no reported issue. Exactly the outcome the reset was for.' },
-  { n: 5, title: 'The training is DONE — stop adding', done: true,
-    body: 'You have 21.1 with 6 at MP banked three weeks out. There is no run between now and Nov 7 that makes you fitter; gains take 10–14 days to express and that window is shut. Every remaining session exists to keep you sharp and get you to the line healthy. Week 14 is deliberately 38 miles with a 12-mile easy long run — do not upgrade it.' },
-  { n: 6, title: 'Put strength and core back, this week',
-    body: 'Zero strength since Sep 28, zero core since Sep 10. The split squat and side plank went into Monday specifically to protect this knee, and the knee has just been through something. Two sessions a week for three weeks is cheap insurance on a race you have already earned.' },
-  { n: 7, title: 'Race plan: 7:25 from the gun is now the call',
-    body: 'The Oct 8 fallback of 7:35–7:40 can be retired. Start at 7:28–7:30 for the first two miles to let the crowd thin, settle to 7:25, and hold. Halfway target 1:37:0x–1:37:30. You have now run that pace for six miles at mile 21 of a long run, at a heart rate you could hold a conversation near.' },
-  { n: 8, title: 'The only way to lose this now is between here and the line',
-    body: 'Not fitness — fatigue, a niggle chased too hard, or a hero session in week 14 or 15. Boring is the strategy. If something feels off, take the day. You have a 479-mile block behind you; nothing you do in the next 20 days adds to it.' },
+  { n: 1, title: 'Recover properly — 2 to 3 weeks, non-negotiable', 
+    body: 'You just ran the last six miles of a marathon on an empty tank, which does more muscular damage than a well-paced race. Week one: no running at all. Walking, gentle yoga, eat well. Week two: three or four easy runs, 20–25 miles total, all conversational. Week three: ~30 miles, reintroduce strides. Jumping back early is the single most common way marathoners get injured, and you have a knee with history.' },
+  { n: 2, title: 'The lesson is banked — now make it structural',
+    body: 'Houston on Jan 17 is already designated as a NOT-a-race: ~90% effort off a 3–4 day mini-taper. That is now doubly right. It is the perfect low-stakes place to practise going out correctly, because there is no time goal to tempt you. Run the first ten miles at a pace that feels almost insultingly easy and see what the back half gives you.' },
+  { n: 3, title: 'Race by heart rate for the first half, not pace',
+    body: 'Your own trace is the prescription. On Oct 17 you held 7:25 at HR 158. On race day the same pace cost you 175–182. Next marathon: cap your heart rate at 160 for the first ten miles and let the pace be whatever that produces. If it says 7:40, run 7:40. The watch lied to you on Nov 7 because the cold made the effort feel cheap; your heart rate did not.' },
+  { n: 4, title: 'Put strength, core and yoga back permanently',
+    body: 'Across the whole block: strength 11 of 16 weeks, core 6 of 16, yoga 51 of 112 days. Those were the three things that kept slipping, and the knee issue showed up during the longest gap. At the 70+ mpw the Boston project requires, they stop being optional.' },
+  { n: 5, title: 'Nothing about Boston changed on Nov 7',
+    body: 'The projection was ~3:00–3:05 at a fall-2027 marathon, 2:55 in 2028, 2:50 in 2029, built on volume rather than workouts. A 3:22:45 run on 3:17 fitness does not move that — if anything the first twenty miles confirm the engine. The limiter remains the same: get to 70 mpw and stay healthy there.' },
 ]
 
 export const BOTTOM_LINE =
-  'On Oct 17 you ran 21.1 miles and closed the last six at exactly 7:25 — goal marathon pace — with your heart rate FALLING from 168 ' +
-  'to 158 across those miles. Three weeks out, that is as clean a readiness signal as this sport offers, and it retires the cautious ' +
-  'race plan written when your knee was sore. Target 7:25 from the gun. The build is finished: 479 miles, twelve long runs, every ' +
-  'single one completed. Two caveats carry forward. You got here by running 9 miles over a plan deliberately written down after an ' +
-  'injury, which is the same shape of decision that caused the injury — and strength has been absent since Sep 28, core since Sep 10, ' +
-  'the exact work added to protect that knee. So the last three weeks are deliberately boring: 38, then 27, then race week. Absorb ' +
-  'Oct 17, put the strength back, and get to the line intact. The hard part is already done.'
+  'Indianapolis Monumental, 3:22:45 — a seventeen-minute personal best, thirteen PRs in one morning, and by your own account a lot of ' +
+  'fun. That is the headline and it deserves to stay the headline. The second thing that is true: you were fitter than the clock says. ' +
+  'You went through halfway in 1:35:44, nearly three minutes ahead of a plan you had already agreed was the ambitious one, and your ' +
+  'heart rate hit 182 by mile 13 running a pace you had held at 158 three weeks earlier. The wall at mile 21 was the bill. Every ' +
+  'version of running the plan — including the one where the back half goes badly — finishes ahead of where you did. You did not ' +
+  'lack fitness. You lacked three minutes of patience in the first half, in 34-degree air that made it feel free. Now you have your ' +
+  'own heart-rate trace of that mistake, which is worth more than any workout in the block. Sixteen weeks, 566 miles, fourteen long ' +
+  'runs, one knee scare, one illness, and a big PR at the end of it. Recover properly, then Houston is where you practise the fix.'
 
 export const PLAN_CHANGES = {
-  title: 'Plan changes log',
+  title: 'Plan changes log — the whole block',
   rows: [
-    ['Week 7 · Sat Sep 5', 'Long run 15 → 18 mi', 'Week total 46 → 49'],
-    ['Week 8 · Sep 7–13', 'Cutback → trimmed build. 5 mi tempo restored, long run 12 → 18', 'Week total 38 → 45'],
+    ['Week 7 · Sat Sep 5', 'Long run 15 → 18 mi', '46 → 49'],
+    ['Week 8 · Sep 7–13', 'Cutback → trimmed build; 5 mi tempo restored, long run 12 → 18', '38 → 45'],
     ['Weeks 9–10 · Scotland', 'Unchanged — served as the two-week recovery block', '~34 / ~38'],
-    ['Week 11 · Sep 28–Oct 4', 'Long run 16 → 18 (last 4 @ MP)', 'Week total 46 → 48'],
-    ['Week 12 · Oct 5–11', 'Long run 18 → 20 (last 4 @ MP)', 'Week total 50 → 52'],
-    ['Week 13 · Oct 12–18', 'Peak 20 unchanged at the time', '52'],
-    ['Strength · from Sep 14', 'Friday Strength B retired after 0 of 9. Split squat + side plank folded into Monday', 'Mon 30 → 35 min'],
-    ['Tuesdays · wks 11–13', 'NEW: 3 mi easy PM shakeout added after the morning reps', '+3 mi/wk'],
-    ['Paces · from Sep 28', 'Long run 8:15–9:00 → 8:45–9:20; easy 8:30–9:15 → 9:00–9:45. MP unchanged at 7:25', 'matched to real data'],
-    ['Week 12 · Oct 8', 'REWRITTEN: reset week for left knee/quad. 20-miler cancelled, daily mobility, 3 mi test run', '55 → ~10'],
-    ['Week 13 · Oct 8', 'Was PEAK. Rewritten as conditional return: intervals dropped, long run 20 → 13 easy, no MP', '55 → ~33'],
-    ['Tuesday doubles · Oct 8', 'Removed from weeks 12–13 — the extra load was the wrong bet mid-injury', '−3 mi/wk'],
-    ['Week 14 · Oct 18', 'REWRITTEN: dress rehearsal dropped (run early on Oct 17). Long run 15 w/ 6 @ MP → 12 easy, intervals removed', '~41 → 38'],
-    ['Week 15 · Oct 18', 'Taper trimmed further; long run 12 → 9', '32 → 27'],
-    ['Race plan · Oct 18', 'Plan B retired. Target 7:25 from the start, not 7:35–7:40', 'goal 3:14:xx'],
+    ['Strength · Sep 12', 'Friday Strength B retired after 0 of 9. Split squat + side plank folded into Monday', 'Mon 30 → 35 min'],
+    ['Paces · Sep 28', 'Long run 8:15–9:00 → 8:45–9:20; easy 8:30–9:15 → 9:00–9:45', 'matched to real data'],
+    ['Tuesdays · wks 11–13', '3 mi easy PM shakeout added', '+3 mi/wk'],
+    ['Week 12 · Oct 8', 'REWRITTEN: reset week for left knee/quad. 20-miler cancelled', '55 → ~10'],
+    ['Week 13 · Oct 8', 'Conditional return: intervals dropped, long run 20 → 13 easy', '55 → ~33'],
+    ['Week 14 · Oct 18', 'Dress rehearsal dropped (run early Oct 17). Long run → 12 easy', '~41 → 38'],
+    ['Week 15 · Oct 26', 'Taper rewritten around illness; Thursday MP session made conditional', '32 → 27'],
+    ['Race plan · Oct 26', 'Start 7:30, one decision point. 3:15 reach / 3:17 realistic / 3:20 floor', 'goal 3:16:30'],
+    ['Race plan · Oct 26', 'Decision point moved mile 16 → 18–19 after course rollers found at 15–18', 'course-adjusted'],
+    ['RACE · Nov 7', 'Ran 1:35:44 first half vs 1:38:30 planned. Finished 3:22:45', '+12:47 positive split'],
   ],
-  note: 'The peak long run is done and the fitness question is answered. The guiding principle for the last three weeks is unchanged and now matters more than ever: you cannot gain meaningful fitness from here, only preserve it or lose it. Every remaining decision should be the cautious one.',
+  note: 'Sixteen weeks, 566 miles, 14 of 15 long runs, one knee scare, one illness, and a 17-minute PR. The plan was adjusted eleven times and the only instruction that did not get followed was the one that mattered most on the day: go out slow.',
 }

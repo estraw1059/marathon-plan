@@ -1,12 +1,73 @@
 import {
   SNAPSHOT, SCOREBOARD, SCOREBOARD_NOTE, COMPLETION, PACE_CHECK,
   HEAT, ACTIONS, BOTTOM_LINE, PLAN_CHANGES, SINCE_LAST, FATIGUE,
+  RACE_RESULT, RACE_READ,
 } from './reconcile.js'
 
 export default function Reconcile() {
   return (
     <div className="recon">
       <p className="recon-stamp">{SNAPSHOT}</p>
+
+      <div className="result-hero">
+        <div className="result-main">
+          <span className="result-label">Indianapolis Monumental · Nov 7, 2026</span>
+          <strong>{RACE_RESULT.time}</strong>
+          <span className="result-pr">{RACE_RESULT.pr} · {RACE_RESULT.prev}</span>
+          <p className="result-quote">{RACE_RESULT.quote}</p>
+        </div>
+        <div className="result-stats">
+          <div><em>{RACE_RESULT.halves[0]}</em><span>1st half</span></div>
+          <div><em>{RACE_RESULT.halves[1]}</em><span>2nd half</span></div>
+          <div><em>{RACE_RESULT.hr.split('·')[0].replace('Avg ','')}</em><span>avg HR</span></div>
+        </div>
+      </div>
+      <p className="recon-note">{RACE_RESULT.conditions} · {RACE_RESULT.split}</p>
+
+      <section>
+        <h2 className="nut-h2">PRs set on race day</h2>
+        <div className="pr-strip">
+          {RACE_RESULT.prs.map(([d, t]) => (
+            <div className="pr-chip" key={d}><em>{t}</em><span>{d}</span></div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="nut-h2">Mile splits — the story in one table</h2>
+        <div className="splits-grid">
+          {RACE_RESULT.splits.map(([mi, sp, h]) => {
+            const tone = h >= 173 ? 'hot' : (mi >= 21 ? 'fade' : 'ok')
+            return (
+              <div className={`split-cell ${tone}`} key={mi}>
+                <span className="split-mi">{mi}</span>
+                <strong>{sp}</strong>
+                <span className="split-hr">{h}</span>
+              </div>
+            )
+          })}
+        </div>
+        <p className="recon-note">
+          Grey = on plan · orange = heart rate 173+ (above marathon-sustainable) · red = the fade.
+          Note the heart rate FALLING through miles 21–26 while pace collapsed — that is fuel and muscle, not heart.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="nut-h2">{RACE_READ.title}</h2>
+        <div className="fatigue-card">
+          {RACE_READ.body.map((p, i) => <p key={i}>{p}</p>)}
+        </div>
+        <div className="rd-math" style={{ marginTop: 14 }}>
+          <h4>What each version of the plan would have produced</h4>
+          {RACE_READ.counterfactual.map(([a, b]) => (
+            <div className={`rd-math-row ${a.startsWith('What actually') ? 'cf-actual' : ''}`} key={a}>
+              <span>{a}</span><em>{b}</em>
+            </div>
+          ))}
+        </div>
+        <p className="conf-close" style={{ marginTop: 12 }}>{RACE_READ.closing}</p>
+      </section>
 
       <section>
         <h2 className="nut-h2">Weekly scoreboard</h2>

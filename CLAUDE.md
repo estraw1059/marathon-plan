@@ -102,6 +102,24 @@ History worth knowing: a left knee/quad issue cost week 12 (Oct 5–11). Six day
 
 After Nov 7, this doc needs rewriting for whatever comes next — see the race calendar and Boston project below.
 
+## Left-leg history — treat as a standing constraint
+
+Eric has a **chronic left-side pattern**, confirmed Nov 2026:
+
+- **Major left ankle injury roughly 6 years ago** (~2020). This is almost certainly the root.
+- The left leg "always" runs tighter than the right.
+- **Oct 2026:** left knee/quad tightness cost a full training week mid-block.
+- **Nov 2026:** after the marathon, the left calf was markedly more sore and stiffer (reduced dorsiflexion) than the right.
+
+Three different tissues — ankle, knee/quad, calf — all on the same side. That is a compensation chain, not three coincidences. An old ankle injury that limits dorsiflexion loads the calf, which changes knee mechanics, which loads the quad.
+
+**Implications to hold onto:**
+
+- At 50-ish mpw this shows up as occasional niggles. At the **70+ mpw the Boston project requires, it is the single most likely thing to stop him.** Volume is the goal and this is the constraint on the goal.
+- A **gait assessment plus a hip/glute strength and ankle-mobility screen** is the highest-leverage thing available to him, and the post-marathon recovery block is the right time. Keep raising this until it is done.
+- Any unilateral left-side symptom deserves more attention than the equivalent on the right — it is a pattern, not a one-off.
+- Single-leg strength work and ankle dorsiflexion mobility should be permanent fixtures, not optional extras. Strength ran 11 of 16 weeks and core 6 of 16 this block; the knee issue appeared during the longest gap.
+
 ## Race calendar and the Boston project
 
 Eric's stated long-term goal is a **Boston qualifier**. He is in the **men's 18–34** bracket: standard **2:55:00**, but the 2027 cutoff ran **5:17 under**, so the practical bar is **~2:50**. He has calibrated to that correctly.
@@ -116,6 +134,8 @@ Eric's stated long-term goal is a **Boston qualifier**. He is in the **men's 18�
 **Agreed strategy (Oct 2026).** The honest assessment given: 3:15 → 2:50 is a 2–3 year project, not a one-year one. **Projected** arc — these are projections from current data, NOT targets, and the distinction matters to him: ~3:00–3:05 at a fall-2027 marathon, ~2:55 in 2028, ~2:50 in 2029. Race-day targets get chosen 3 months out from the actual workout data, never years ahead.
 
 Equivalences he should be held to (Riegel): 1:20 half → 2:47 marathon · 1:22 → 2:51 · 1:24 → 2:55 · 1:26 → 2:59. A 3:15 marathon ≡ a 1:33:30 half. He floated 1:20 for the Apr 2027 half; that is a 13:32 improvement in 22 weeks (62 sec/mi) when his sessions sit 32–54 sec/mi off 1:20 pace. **Realistic April target 1:24–1:28, stretch 1:23.**
+
+**On "is the next marathon a BQ attempt?"** — he asked this in Nov 2026 and it is worth being crisp. Men 18–34 need 2:55 nominal / **~2:50 effective**. A fall-2027 marathon projects at 3:02–3:08, which is a large PR and NOT a qualifier. Fall 2027 is the stepping stone, not the attempt. Current honest arc: fall 2027 ~3:02–3:08 · 2028 ~2:55–2:58 · 2029 ~2:48–2:53 (first genuine BQ window). Note the age bracket matters — if he ages into 35–39 the standard moves to 3:00 nominal / ~2:55 effective, which could pull the timeline in by a year or more. Confirm his actual age before projecting far out.
 
 **The projection moves a full year earlier if** any of these land: Nov 7 comes in at 3:08 or better; he reaches 65 mpw by February without knee trouble; Feb–March threshold work lands at 6:30–6:40/mi. Re-run the projection when the data arrives rather than defending the old number.
 

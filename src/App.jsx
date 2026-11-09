@@ -1,8 +1,28 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
-  WEEKS, PACES, ROUTINES, DAY_NAMES, RACE_DATE,
-  dayDate, fmtDate, weekRange,
+  WEEKS as INDY_WEEKS, PACES as INDY_PACES, ROUTINES, DAY_NAMES,
+  RACE_DATE as INDY_RACE, PLAN_START as INDY_START,
 } from './data.js'
+import {
+  WEEKS as HOU_WEEKS, PACES as HOU_PACES, RACE_DATE as HOU_RACE,
+  PLAN_START as HOU_START, KEY_DATES as HOU_KEY, BLOCK_SUB as HOU_SUB,
+} from './houston.js'
+
+const BLOCKS = {
+  houston: { id: 'houston', label: 'Houston 2027', weeks: HOU_WEEKS, paces: HOU_PACES,
+    start: HOU_START, race: HOU_RACE, sub: HOU_SUB, keyDates: HOU_KEY,
+    title: 'Houston · sub-3 project', raceLabel: 'Houston, Sun Jan 17 2027' },
+  indy: { id: 'indy', label: 'Indy 2026 (done)', weeks: INDY_WEEKS, paces: INDY_PACES,
+    start: INDY_START, race: INDY_RACE, sub: '16 weeks · Indianapolis Monumental — finished 3:22:45',
+    title: 'Sub-3:15 Marathon', raceLabel: 'Indianapolis, Sat Nov 7 2026' },
+}
+
+const dayDateIn = (start, wIdx, dIdx) => {
+  const d = new Date(start); d.setDate(d.getDate() + wIdx * 7 + dIdx); return d
+}
+const fmtDate = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+const weekRangeIn = (start, wIdx) =>
+  `${fmtDate(dayDateIn(start, wIdx, 0))} – ${fmtDate(dayDateIn(start, wIdx, 6))}`
 import Nutrition from './Nutrition.jsx'
 import Reconcile from './Reconcile.jsx'
 import RaceDay from './RaceDay.jsx'
@@ -47,9 +67,9 @@ function Routine({ routine }) {
 }
 
 function DayModal({ sel, done, toggle, onClose }) {
-  const { week, wIdx, dIdx, day } = sel
-  const date = dayDate(wIdx, dIdx)
-  const key = `${wIdx}-${dIdx}`
+  const { week, wIdx, dIdx, day, block } = sel
+  const date = dayDateIn(block.start, wIdx, dIdx)
+  const key = `${block.id}-${wIdx}-${dIdx}`
   const strengthKey = day.strength ? day.strength.replace('-light', '') : null
   const routine = strengthKey ? ROUTINES[strengthKey] : null
 
@@ -80,7 +100,7 @@ function DayModal({ sel, done, toggle, onClose }) {
           <section>
             <h3>Relevant paces</h3>
             <ul className="pace-mini">
-              {PACES.filter(p => day.run.includes('IV') ? p.name.startsWith('Interval') || p.name.startsWith('Easy')
+              {block.paces.filter(p => day.run.includes('IV') ? p.name.startsWith('Interval') || p.name.startsWith('Easy')
                 : day.run.toLowerCase().includes('tempo') ? p.name === 'Tempo' || p.name.startsWith('Easy')
                 : day.run.includes('MP') ? p.name.includes('Marathon') || p.name.startsWith('Easy')
                 : p.name === 'Strides' || p.name.startsWith('Easy'))
@@ -146,11 +166,14 @@ export default function App() {
   const [sel, setSel] = useState(null)
   const [info, setInfo] = useState(null) // 'paces' | 'strength'
   const [tab, setTab] = useState('plan') // 'plan' | 'nutrition' | 'reconcile' | 'raceday'
+  const [blockId, setBlockId] = useState(() => localStorage.getItem('mp-block') || 'houston')
+  const block = BLOCKS[blockId] || BLOCKS.houston
   const [done, toggle] = useDone()
   const today = new Date()
 
-  const daysToRace = Math.ceil((RACE_DATE - today) / 86400000)
-  const totalDays = WEEKS.length * 7
+  const pickBlock = (id) => { setBlockId(id); localStorage.setItem('mp-block', id) }
+  const daysToRace = Math.ceil((block.race - today) / 86400000)
+  const totalDays = block.weeks.length * 7
   const pct = Math.round((done.size / totalDays) * 100)
 
   useEffect(() => {
@@ -162,8 +185,8 @@ export default function App() {
     <div className="app">
       <header>
         <div>
-          <h1>Sub-3:15 Marathon</h1>
-          <p className="header-sub">16 weeks · Race day Sat Nov 7, 2026 · Goal pace 7:25/mi</p>
+          <h1>{block.title}</h1>
+          <p className="header-sub">{block.sub}</p>
         </div>
         <div className="header-right">
           <div className="countdown">
@@ -190,6 +213,20 @@ export default function App() {
       {tab === 'raceday' && <RaceDay />}
 
       {tab === 'plan' && <>
+      <nav className="block-switch">
+        {Object.values(BLOCKS).map(b => (
+          <button key={b.id} className={b.id === blockId ? 'on' : ''} onClick={() => pickBlock(b.id)}>{b.label}</button>
+        ))}
+      </nav>
+
+      {block.keyDates && (
+        <div className="key-dates">
+          {block.keyDates.map(([d, n, note]) => (
+            <div key={d}><strong>{d}</strong><em>{n}</em><span>{note}</span></div>
+          ))}
+        </div>
+      )}
+
       <nav className="toolbar">
         <button onClick={() => setInfo('paces')}>Training paces</button>
         <button onClick={() => setInfo('strength')}>Strength guide</button>
@@ -204,18 +241,18 @@ export default function App() {
       </nav>
 
       <main>
-        {WEEKS.map((week, wIdx) => (
+        {block.weeks.map((week, wIdx) => (
           <section key={week.n} className={`week ${week.scot ? 'scotland' : ''}`}>
             <div className="week-head">
               <h2>Week {week.n}</h2>
-              <span className="week-range">{weekRange(wIdx)}</span>
+              <span className="week-range">{weekRangeIn(block.start, wIdx)}</span>
               <span className="week-total">{typeof week.total === 'number' ? `${week.total} mi` : week.total}</span>
               {week.label && <span className={`week-label ${week.scot ? 'scot' : ''}`}>{week.label}</span>}
             </div>
             <div className="grid">
               {week.days.map((day, dIdx) => {
-                const date = dayDate(wIdx, dIdx)
-                const key = `${wIdx}-${dIdx}`
+                const date = dayDateIn(block.start, wIdx, dIdx)
+                const key = `${blockId}-${wIdx}-${dIdx}`
                 const isToday = isSameDay(date, today)
                 return (
                   <button
@@ -226,7 +263,7 @@ export default function App() {
                       isToday ? 'today' : '',
                       done.has(key) ? 'done' : '',
                     ].join(' ')}
-                    onClick={() => setSel({ week, wIdx, dIdx, day })}
+                    onClick={() => setSel({ week, wIdx, dIdx, day, block })}
                   >
                     <span className="day-date">{DAY_NAMES[dIdx]} {fmtDate(date)}</span>
                     <span className="day-run">{day.run}</span>
@@ -253,7 +290,7 @@ export default function App() {
         <InfoModal title="Training paces" onClose={() => setInfo(null)}>
           <p className="routine-note">Re-test fitness around Week 11 (post-Scotland) and tighten these as VO2max climbs from 54 back toward 56+.</p>
           <ul className="pace-list">
-            {PACES.map(p => (
+            {block.paces.map(p => (
               <li key={p.name}>
                 <div className="ex-head"><strong>{p.name}</strong><span className="dose">{p.pace}</span></div>
                 {p.note && <p className="ex-how">{p.note}</p>}

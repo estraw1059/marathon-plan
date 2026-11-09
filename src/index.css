@@ -542,3 +542,19 @@ footer {
 .split-hr { display: block; font-size: .62rem; color: var(--gray); }
 .cf-actual { border-top: 1px solid var(--border); margin-top: 4px; padding-top: 7px !important; }
 .cf-actual em { color: #a32020 !important; }
+
+.block-switch { display: flex; gap: 8px; padding: 14px 0 0; flex-wrap: wrap; }
+.block-switch button {
+  background: #fff; color: var(--gray); border: 1px solid var(--border);
+  border-radius: 20px; padding: 6px 15px; font-size: .8rem; font-weight: 700; cursor: pointer;
+}
+.block-switch button.on { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+.key-dates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+@media (max-width: 820px) { .key-dates { grid-template-columns: 1fr; } }
+.key-dates > div {
+  background: var(--light); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px;
+}
+.key-dates strong { display: block; font-size: .72rem; color: var(--blue); text-transform: uppercase; letter-spacing: .05em; }
+.key-dates em { display: block; font-style: normal; font-weight: 700; color: var(--navy); font-size: .92rem; margin: 2px 0 3px; }
+.key-dates span { font-size: .78rem; color: var(--gray); line-height: 1.45; }

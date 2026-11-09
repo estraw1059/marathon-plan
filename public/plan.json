@@ -6,7 +6,7 @@
   "planStart": "2026-07-20",
   "raceDate": "2026-11-07",
   "totalWeeks": 16,
-  "generatedAt": "2026-11-09T11:49:18.884Z",
+  "generatedAt": "2026-11-09T20:52:42.891Z",
   "revision": "2026-09-04 — long-run progression reworked (18/18 pre-Scotland, 18/20/20 in wks 11-13)",
   "paces": [
     {
@@ -1886,5 +1886,1147 @@
         }
       ]
     }
-  ]
+  ],
+  "houstonBlock": {
+    "name": "Houston 2027",
+    "planStart": "2026-11-09",
+    "raceDate": "2027-01-17",
+    "paces": [
+      {
+        "name": "Easy / Recovery",
+        "pace": "8:45–9:30 /mi",
+        "note": "Conversational. Most of your week lives here."
+      },
+      {
+        "name": "Long run",
+        "pace": "8:30–9:10 /mi",
+        "note": "Relaxed. MP segments only where listed."
+      },
+      {
+        "name": "Houston pace (90%)",
+        "pace": "7:35–7:45 /mi",
+        "note": "What you will run on Jan 17. Deliberately NOT race pace."
+      },
+      {
+        "name": "Marathon pace (goal)",
+        "pace": "7:15 /mi",
+        "note": "Raised from 7:25. The pace a 3:10 is built on — used in workouts, not at Houston."
+      },
+      {
+        "name": "Tempo / threshold",
+        "pace": "6:45–6:55 /mi",
+        "note": "NEW BAND, down from 6:55–7:05. Earned: 2 × 2 mi at 6:50 in 82°F on Oct 22."
+      },
+      {
+        "name": "Intervals (IV)",
+        "pace": "6:10–6:20 /mi",
+        "note": "NEW BAND, down from 6:30–6:40. Equal-time jog recovery."
+      },
+      {
+        "name": "5K / VO2 reps",
+        "pace": "5:55–6:05 /mi",
+        "note": "Short reps only, 400–800m. Introduced from week 7."
+      },
+      {
+        "name": "Strides",
+        "pace": "20–30 sec fast",
+        "note": "Smooth acceleration, full recovery. Not sprints."
+      }
+    ],
+    "weeks": [
+      {
+        "week": 1,
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-15",
+        "plannedMiles": 7,
+        "label": "RECOVERY — no running until Thu",
+        "days": [
+          {
+            "date": "2026-11-09",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Two days after a marathon. No running, no strength. Walk often and gently, elevate when sitting, compression socks during the day. Left calf: gentle ankle range of motion only, NOT stretching — tightness here is damage, not shortness.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-10",
+            "dayOfWeek": "Tue",
+            "workout": "REST / walk",
+            "type": "rest",
+            "detail": "Walk 20–30 min. Protein ~1.6–2 g/kg, carbs up, sleep long. This is the repair week.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          },
+          {
+            "date": "2026-11-11",
+            "dayOfWeek": "Wed",
+            "workout": "REST / walk",
+            "type": "rest",
+            "detail": "Walk again. From today light foam rolling is fine — gentle passes on the calf, not grinding.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          },
+          {
+            "date": "2026-11-12",
+            "dayOfWeek": "Thu",
+            "workout": "3 mi VERY easy",
+            "type": "easy",
+            "miles": 3,
+            "detail": "FIRST RUN BACK, five days post-marathon. 10:00+/mi, flat ground. ONLY if the left calf is clearly improving — if it is still markedly tighter than the right, walk instead and try Saturday. No watch-chasing. This is a diagnostic.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-13",
+            "dayOfWeek": "Fri",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Rest regardless of how Thursday felt.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-14",
+            "dayOfWeek": "Sat",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles very easy, 10:00/mi. Second run back. Stop if anything sharpens.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-15",
+            "dayOfWeek": "Sun",
+            "workout": "REST / walk",
+            "type": "rest",
+            "detail": "Walk and stretch. Week one done — the hardest thing you did was not run.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "startDate": "2026-11-16",
+        "endDate": "2026-11-22",
+        "plannedMiles": 24,
+        "label": "EASING BACK · work 5K Thu",
+        "days": [
+          {
+            "date": "2026-11-16",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Strength A returns, light — 2 sets, moderate weight. Skip deep knee flexion if the quad is still tender. Keep the side plank.",
+            "strength": "A-light",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-17",
+            "dayOfWeek": "Tue",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-18",
+            "dayOfWeek": "Wed",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles easy. Core circuit returns, 2 sets only. Rebuild the habit before the volume.",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-19",
+            "dayOfWeek": "Thu",
+            "workout": "WORK 5K — tempo effort",
+            "type": "quality",
+            "note": "Thu Nov 19 · not a race",
+            "miles": 6,
+            "detail": "Warm up 2 mi, run the 5K, cool down 1 mi. TEMPO EFFORT, around 6:55–7:05 — NOT 5K race pace. You are twelve days past a marathon; a maximal 5K here would cost you a fortnight of this block for a time that means nothing. If the legs feel heavy on the start line, run it easy with the colleagues and enjoy it. Nobody at work is checking your splits.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-20",
+            "dayOfWeek": "Fri",
+            "workout": "REST or 3 mi easy",
+            "type": "rest",
+            "detail": "Optional 3 easy. Rest is the better choice if Thursday took anything out of you.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-21",
+            "dayOfWeek": "Sat",
+            "workout": "LONG 6 mi",
+            "type": "long",
+            "note": "Easy",
+            "miles": 6,
+            "detail": "6 miles entirely easy. Longest run since the marathon.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-22",
+            "dayOfWeek": "Sun",
+            "workout": "4 mi recovery",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at the slow end of easy, 9:15+/mi. Legs will be heavy from Saturday — that is the point.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "startDate": "2026-11-23",
+        "endDate": "2026-11-29",
+        "plannedMiles": 33,
+        "label": "REBUILD",
+        "days": [
+          {
+            "date": "2026-11-23",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest from running. Strength keeps the day productive without pounding.",
+            "strength": "A",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-24",
+            "dayOfWeek": "Tue",
+            "workout": "6 mi easy + 6×strides",
+            "type": "quality",
+            "miles": 6,
+            "detail": "6 miles easy, then 6 × 20–30 sec strides on flat ground with full walk-back recovery.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-25",
+            "dayOfWeek": "Wed",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-26",
+            "dayOfWeek": "Thu",
+            "workout": "6 mi w/ 3 mi tempo",
+            "type": "quality",
+            "miles": 6,
+            "detail": "FIRST REAL TEMPO of the block, and the first at the new band. Warm up 2 mi, then 3 continuous miles at 6:45–6:55. That is 15–25 sec/mi quicker than the band you ran all autumn — it should feel hard but controlled. If mile 3 is falling apart, you started too fast. Cool down 1 mi.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-27",
+            "dayOfWeek": "Fri",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles easy + Strength B — the Friday session, back on trial. 20 minutes: split squat, DB hip hinge, push-ups, side plank, calf raises. Start the calf work LIGHT given the left leg.",
+            "strength": "B",
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-11-28",
+            "dayOfWeek": "Sat",
+            "workout": "LONG 8 mi",
+            "type": "long",
+            "note": "Easy",
+            "miles": 8,
+            "detail": "8 miles at long-run pace (8:30–9:10/mi). Easy Fuel every 30–35 min from mile 5.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-11-29",
+            "dayOfWeek": "Sun",
+            "workout": "4 mi recovery",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at the slow end of easy, 9:15+/mi. Legs will be heavy from Saturday — that is the point.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "startDate": "2026-11-30",
+        "endDate": "2026-12-06",
+        "plannedMiles": 38,
+        "label": "BUILD",
+        "days": [
+          {
+            "date": "2026-11-30",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest from running. Strength keeps the day productive without pounding.",
+            "strength": "A",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-01",
+            "dayOfWeek": "Tue",
+            "workout": "7 mi w/ 5 × 800m @ IV",
+            "type": "quality",
+            "miles": 7,
+            "detail": "Warm up 2 mi + 4 strides. 5 × 800m at the NEW interval band, 6:10–6:20/mi — roughly 3:05–3:10 per rep. Equal-time jog between. You ran 6:25 in September; this is the step up. If reps 4 and 5 drift past 6:25, the pace is too hot for now and that is useful information, not a failure.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-02",
+            "dayOfWeek": "Wed",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-03",
+            "dayOfWeek": "Thu",
+            "workout": "7 mi w/ 4 mi tempo",
+            "type": "quality",
+            "miles": 7,
+            "detail": "Warm up 2 mi, 4 continuous miles at 6:45–6:55, 1 mi down.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-04",
+            "dayOfWeek": "Fri",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": "B",
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-05",
+            "dayOfWeek": "Sat",
+            "workout": "LONG 11 mi",
+            "type": "long",
+            "note": "Easy",
+            "miles": 11,
+            "detail": "11 miles at long-run pace (8:30–9:10/mi). Easy Fuel every 30–35 min from mile 5.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-06",
+            "dayOfWeek": "Sun",
+            "workout": "4 mi recovery",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at the slow end of easy, 9:15+/mi. Legs will be heavy from Saturday — that is the point.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 5,
+        "startDate": "2026-12-07",
+        "endDate": "2026-12-13",
+        "plannedMiles": "33.1",
+        "label": "DALLAS HALF week",
+        "days": [
+          {
+            "date": "2026-12-07",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest from running. Strength keeps the day productive without pounding.",
+            "strength": "A-light",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-08",
+            "dayOfWeek": "Tue",
+            "workout": "6 mi w/ 4 × 800m @ IV",
+            "type": "quality",
+            "miles": 6,
+            "detail": "Warm up 2 mi. 4 × 800m at 6:10–6:20. Sharpening only — stop while it still feels good.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-09",
+            "dayOfWeek": "Wed",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles easy, light core (2 sets).",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-10",
+            "dayOfWeek": "Thu",
+            "workout": "5 mi easy + 4×strides",
+            "type": "quality",
+            "miles": 5,
+            "detail": "5 miles easy, then 4 × 20–30 sec strides on flat ground with full walk-back recovery.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-11",
+            "dayOfWeek": "Fri",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest. Race tomorrow-but-one.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          },
+          {
+            "date": "2026-12-12",
+            "dayOfWeek": "Sat",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles easy + 4 strides. Pre-race shakeout. Lay out kit tonight.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-13",
+            "dayOfWeek": "Sun",
+            "workout": "DALLAS HALF MARATHON",
+            "type": "race",
+            "note": "Sun Dec 13 · RACE IT",
+            "miles": 13.1,
+            "detail": "RACE this one — a half costs you three or four days of recovery, not three weeks, and it is the cleanest fitness marker you will get before Houston. THE PACING RULE, learned the hard way on Nov 7: cap your heart rate at 165 for the first 4 miles and let the pace be whatever that produces. Do not look at the watch and chase a number. Target around 6:55–7:05/mi if the fitness is there, which on a good day is roughly 1:31–1:33. Negative split it. This is where you prove you can start correctly.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 6,
+        "startDate": "2026-12-14",
+        "endDate": "2026-12-20",
+        "plannedMiles": 37,
+        "label": "ABSORB",
+        "days": [
+          {
+            "date": "2026-12-14",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest from running. Strength keeps the day productive without pounding.",
+            "strength": "A-light",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-15",
+            "dayOfWeek": "Tue",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles easy. Recovery from the half — resist doing anything clever today.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-16",
+            "dayOfWeek": "Wed",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-17",
+            "dayOfWeek": "Thu",
+            "workout": "6 mi w/ 3 mi tempo",
+            "type": "quality",
+            "miles": 6,
+            "detail": "Warm up 2 mi. 3 continuous miles at tempo (6:45–6:55/mi) — comfortably hard, a sentence not a paragraph. Cool down to 6 total.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-18",
+            "dayOfWeek": "Fri",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": "B",
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-19",
+            "dayOfWeek": "Sat",
+            "workout": "LONG 12 mi",
+            "type": "long",
+            "note": "Easy",
+            "miles": 12,
+            "detail": "12 miles at long-run pace (8:30–9:10/mi). Easy Fuel every 30–35 min from mile 5.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-20",
+            "dayOfWeek": "Sun",
+            "workout": "5 mi recovery",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles at the slow end of easy, 9:15+/mi. Legs will be heavy from Saturday — that is the point.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 7,
+        "startDate": "2026-12-21",
+        "endDate": "2026-12-27",
+        "plannedMiles": 45,
+        "label": "BUILD — doubles begin",
+        "days": [
+          {
+            "date": "2026-12-21",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest from running. Strength keeps the day productive without pounding.",
+            "strength": "A",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-22",
+            "dayOfWeek": "Tue",
+            "workout": "7 mi w/ 6 × 800m @ IV",
+            "type": "quality",
+            "pmRun": {
+              "workout": "3 mi easy shakeout",
+              "miles": 3,
+              "detail": "Evening double, 6+ hours after the morning session. TRULY easy — 9:30–10:00/mi. The job is blood flow after the hard work, not fitness. First thing to cut if the left leg complains."
+            },
+            "miles": 7,
+            "detail": "Warm up 2 mi + 4 strides. 6 × 800m at 6:10–6:20, equal jog. Cool down to 7 total. Evening shakeout tonight — the double starts this week.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-23",
+            "dayOfWeek": "Wed",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-24",
+            "dayOfWeek": "Thu",
+            "workout": "7 mi w/ 4 mi tempo",
+            "type": "quality",
+            "pmRun": {
+              "workout": "3 mi easy shakeout",
+              "miles": 3,
+              "detail": "Evening double, 6+ hours after the morning session. TRULY easy — 9:30–10:00/mi. The job is blood flow after the hard work, not fitness. First thing to cut if the left leg complains."
+            },
+            "miles": 7,
+            "detail": "Warm up 2 mi. 4 continuous miles at tempo (6:45–6:55/mi) — comfortably hard, a sentence not a paragraph. Cool down to 7 total.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-25",
+            "dayOfWeek": "Fri",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": "B",
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-26",
+            "dayOfWeek": "Sat",
+            "workout": "LONG 12 mi",
+            "type": "long",
+            "note": "Last 2 @ MP",
+            "miles": 12,
+            "detail": "12 miles: first 10 at long-run pace, last 2 at goal marathon pace (7:15). First MP touch of the block.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-27",
+            "dayOfWeek": "Sun",
+            "workout": "4 mi recovery",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at the slow end of easy, 9:15+/mi. Legs will be heavy from Saturday — that is the point.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 8,
+        "startDate": "2026-12-28",
+        "endDate": "2027-01-03",
+        "plannedMiles": 50,
+        "label": "BUILD",
+        "days": [
+          {
+            "date": "2026-12-28",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest from running. Strength keeps the day productive without pounding.",
+            "strength": "A",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2026-12-29",
+            "dayOfWeek": "Tue",
+            "workout": "8 mi w/ 5 × 1000m @ IV",
+            "type": "quality",
+            "pmRun": {
+              "workout": "3 mi easy shakeout",
+              "miles": 3,
+              "detail": "Evening double, 6+ hours after the morning session. TRULY easy — 9:30–10:00/mi. The job is blood flow after the hard work, not fitness. First thing to cut if the left leg complains."
+            },
+            "miles": 8,
+            "detail": "Warm up 2 mi + 4 strides. 5 × 1000m at 6:10–6:20 (roughly 3:50–3:57 per rep), equal-time jog. Longer reps, same pace — this is the one that builds threshold.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-30",
+            "dayOfWeek": "Wed",
+            "workout": "6 mi easy",
+            "type": "easy",
+            "miles": 6,
+            "detail": "6 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2026-12-31",
+            "dayOfWeek": "Thu",
+            "workout": "8 mi w/ 5 mi tempo",
+            "type": "quality",
+            "pmRun": {
+              "workout": "3 mi easy shakeout",
+              "miles": 3,
+              "detail": "Evening double, 6+ hours after the morning session. TRULY easy — 9:30–10:00/mi. The job is blood flow after the hard work, not fitness. First thing to cut if the left leg complains."
+            },
+            "miles": 8,
+            "detail": "Warm up 2 mi, 5 CONTINUOUS miles at 6:45–6:55, 1 mi down. The benchmark session of the block — your previous best at this distance was 7:12 in September.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-01",
+            "dayOfWeek": "Fri",
+            "workout": "4 mi easy",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": "B",
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-02",
+            "dayOfWeek": "Sat",
+            "workout": "LONG 14 mi",
+            "type": "long",
+            "note": "Last 3 @ MP",
+            "miles": 14,
+            "detail": "14 miles at long-run pace (8:30–9:10/mi). Last 3 @ MP Fuel every 30–35 min from mile 5.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2027-01-03",
+            "dayOfWeek": "Sun",
+            "workout": "4 mi recovery",
+            "type": "easy",
+            "miles": 4,
+            "detail": "4 miles at the slow end of easy, 9:15+/mi. Legs will be heavy from Saturday — that is the point.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 9,
+        "startDate": "2027-01-04",
+        "endDate": "2027-01-10",
+        "plannedMiles": 55,
+        "label": "PEAK WEEK",
+        "days": [
+          {
+            "date": "2027-01-04",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Full rest from running. Strength keeps the day productive without pounding.",
+            "strength": "A",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2027-01-05",
+            "dayOfWeek": "Tue",
+            "workout": "8 mi w/ 6 × 800m @ IV",
+            "type": "quality",
+            "pmRun": {
+              "workout": "3 mi easy shakeout",
+              "miles": 3,
+              "detail": "Evening double, 6+ hours after the morning session. TRULY easy — 9:30–10:00/mi. The job is blood flow after the hard work, not fitness. First thing to cut if the left leg complains."
+            },
+            "miles": 8,
+            "detail": "Warm up 2 mi + 4 strides. 6 × 800m, and on the last two you may dip to 5:55–6:05 if everything feels easy. Equal jog throughout.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-06",
+            "dayOfWeek": "Wed",
+            "workout": "6 mi easy",
+            "type": "easy",
+            "miles": 6,
+            "detail": "6 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-07",
+            "dayOfWeek": "Thu",
+            "workout": "9 mi w/ 6 mi @ MP",
+            "type": "quality",
+            "pmRun": {
+              "workout": "3 mi easy shakeout",
+              "miles": 3,
+              "detail": "Evening double, 6+ hours after the morning session. TRULY easy — 9:30–10:00/mi. The job is blood flow after the hard work, not fitness. First thing to cut if the left leg complains."
+            },
+            "miles": 9,
+            "detail": "Warm up 2 mi, 6 continuous miles at goal marathon pace (7:15), 1 mi down. This is the confidence session — and note the pace: 7:15, not the 7:25 you built the autumn on.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-08",
+            "dayOfWeek": "Fri",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles at easy pace (8:45–9:30/mi). Conversational throughout — if in doubt, slower.",
+            "strength": "B",
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-09",
+            "dayOfWeek": "Sat",
+            "workout": "LONG 16 mi",
+            "type": "long",
+            "note": "Last 4 @ MP",
+            "miles": 16,
+            "detail": "16 miles, last 4 at 7:15. Final long run of the block. Full race-day fuelling rehearsal — race breakfast, race gels, race kit.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2027-01-10",
+            "dayOfWeek": "Sun",
+            "workout": "5 mi recovery",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles at the slow end of easy, 9:15+/mi. Legs will be heavy from Saturday — that is the point.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      },
+      {
+        "week": 10,
+        "startDate": "2027-01-11",
+        "endDate": "2027-01-17",
+        "plannedMiles": "18 + RACE",
+        "label": "HOUSTON — mini-taper",
+        "days": [
+          {
+            "date": "2027-01-11",
+            "dayOfWeek": "Mon",
+            "workout": "REST",
+            "type": "rest",
+            "detail": "Rest + light Strength A. Last session of the block.",
+            "strength": "A-light",
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2027-01-12",
+            "dayOfWeek": "Tue",
+            "workout": "6 mi w/ 4 × 800m @ IV",
+            "type": "quality",
+            "miles": 6,
+            "detail": "Warm up 2 mi. 4 × 800m at 6:10–6:20. Staying sharp. Should feel easy and leave you wanting more.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-13",
+            "dayOfWeek": "Wed",
+            "workout": "5 mi easy",
+            "type": "easy",
+            "miles": 5,
+            "detail": "5 miles easy, light core (2 sets max).",
+            "strength": null,
+            "core": true,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-14",
+            "dayOfWeek": "Thu",
+            "workout": "4 mi easy + 4×strides",
+            "type": "quality",
+            "miles": 4,
+            "detail": "4 miles easy + 4 strides. Last real run before travel.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 10,
+              "kind": "Post-run hips, calves & ankles"
+            }
+          },
+          {
+            "date": "2027-01-15",
+            "dayOfWeek": "Fri",
+            "workout": "REST — travel",
+            "type": "rest",
+            "detail": "Rest and travel to Houston. Only a 3–4 day mini-taper on purpose — you are not peaking for this, you are training through it.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2027-01-16",
+            "dayOfWeek": "Sat",
+            "workout": "3 mi easy",
+            "type": "easy",
+            "miles": 3,
+            "detail": "3 miles very easy shakeout. Expo, feet up, early night.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 15,
+              "kind": "Full-body flow"
+            }
+          },
+          {
+            "date": "2027-01-17",
+            "dayOfWeek": "Sun",
+            "workout": "HOUSTON MARATHON",
+            "type": "race",
+            "note": "Sun Jan 17 · NOT a race — 90% effort",
+            "miles": 26.2,
+            "detail": "THIS IS NOT A RACE. It is the rehearsal for the thing that cost you Indianapolis. The rule, and there is only one: HEART RATE UNDER 160 FOR THE FIRST TEN MILES. Let the pace be whatever that produces — if it reads 7:50, run 7:50. On Nov 7 your HR hit 182 by mile 13 running a pace you had held at 158 three weeks earlier, and you paid 13 minutes for it over the last six. Today you prove you can do it the other way. Target 7:35–7:45 overall, finishing around 3:20 feeling like you could have kept going. A negative split here is worth more to the sub-3 project than any time you could force. If you feel brilliant at mile 20, you may pick it up — that is the reward for getting the first half right, and it is the only way you are allowed to go faster.",
+            "strength": null,
+            "core": false,
+            "yoga": {
+              "minutes": 20,
+              "kind": "Restorative / deep stretch"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

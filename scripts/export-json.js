@@ -3,6 +3,7 @@ import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { WEEKS, PACES, ROUTINES, PLAN_START, RACE_DATE, DAY_NAMES, dayDate } from '../src/data.js'
+import { WEEKS as HW, PACES as HP, PLAN_START as HS, RACE_DATE as HR } from '../src/houston.js'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const iso = (d) => d.toISOString().slice(0, 10)
@@ -54,6 +55,26 @@ const plan = {
     }])
   ),
   weeks,
+}
+
+// --- Houston block ---
+const hDay = (wIdx, dIdx) => { const d = new Date(HS); d.setDate(d.getDate() + wIdx * 7 + dIdx); return d }
+plan.houstonBlock = {
+  name: 'Houston 2027', planStart: iso(HS), raceDate: iso(HR),
+  paces: HP.map(p => ({ name: p.name, pace: p.pace, note: p.note })),
+  weeks: HW.map((w, wi) => ({
+    week: w.n, startDate: iso(hDay(wi, 0)), endDate: iso(hDay(wi, 6)),
+    plannedMiles: w.total, label: w.label ?? null,
+    days: w.days.map((d, di) => {
+      const o = { date: iso(hDay(wi, di)), dayOfWeek: DAY_NAMES[di], workout: d.run, type: d.type }
+      if (d.sub) o.note = d.sub
+      if (d.pm) o.pmRun = { workout: d.pm.run, miles: d.pm.miles, detail: d.pm.detail }
+      if (typeof d.miles === 'number') o.miles = d.miles
+      o.detail = d.detail; o.strength = d.strength ?? null; o.core = !!d.core
+      o.yoga = d.yoga ? { minutes: d.yoga.min, kind: d.yoga.kind } : null
+      return o
+    }),
+  })),
 }
 
 mkdirSync(resolve(root, 'public'), { recursive: true })
